@@ -19,7 +19,8 @@ server_scripts {
 	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
 	"@vrp/lib/Utils.lua",
-	"server-side/*"
+	"server-side/*",
+    'translations.lua',
 }
 
 files {

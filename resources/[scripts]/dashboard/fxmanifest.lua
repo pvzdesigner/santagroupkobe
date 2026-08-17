@@ -20,6 +20,7 @@ client_scripts {
 	"client/client.lua",
     "client/ticket.lua",
     "client/costumers.lua",
+    'translations.lua',
 }
 
 server_scripts {
@@ -34,6 +35,7 @@ server_scripts {
     "server/tickets.lua",
     "server/code.lua",
     "server/costumers.lua",
+    'translations.lua',
 }
 
 shared_scripts {

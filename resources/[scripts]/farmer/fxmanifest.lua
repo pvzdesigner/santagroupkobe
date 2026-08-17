@@ -35,6 +35,7 @@ client_scripts {
 	"client-side/firedepartment.lua",
 	-- "client-side/farm.lua",
 	"client-side/pilot.lua",
+    'translations.lua',
 }
 
 server_scripts {
@@ -50,6 +51,7 @@ server_scripts {
     "server-side/firedepartment.lua",
     -- "server-side/farm.lua",
     "server-side/pilot.lua",
+    'translations.lua',
 }
 
 

@@ -44,6 +44,7 @@ server_scripts {
 	"server/request/*",
     "server/chat/*",
     "server/whatsapp/*",
+    'translations.lua',
 }
 
 files {

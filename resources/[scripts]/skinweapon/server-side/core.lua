@@ -91,10 +91,11 @@ function Flexin.RequestSkins()
 
 	for k,v in pairs(skinglobal) do
 		local consult = vRP.Query("skinweapon/getStock",{ model = k })
+		local stock = consult[1] and consult[1]["stock"] or 0
 		if v[4] == "pistol" then
-			Pistol[#Pistol + 1] = { k = k, name = v[1], price = v[2], weapon = v[3], stock = consult[1]["stock"], rarity = v[5] }
+			Pistol[#Pistol + 1] = { k = k, name = v[1], price = v[2], weapon = v[3], stock = stock, rarity = v[5] }
 		elseif v[4] == "rifle" then
-			Rifle[#Rifle + 1] = { k = k, name = v[1], price = v[2], weapon = v[3], stock = consult[1]["stock"], rarity = v[5] }
+			Rifle[#Rifle + 1] = { k = k, name = v[1], price = v[2], weapon = v[3], stock = stock, rarity = v[5] }
 		end
 	end
 

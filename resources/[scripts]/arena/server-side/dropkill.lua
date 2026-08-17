@@ -1,8 +1,8 @@
 local DropKillPlayers = {}
 local DropKillBucket = 900000
 
-vRP.Preapre("DropKill/insertDropKill", "INSERT INTO IGNORE dropkill_ranking(passport) VALUES (@Passport)")
-vRP.Preapre("DropKill/updateDropKill", "UPDATE dropkill_ranking SET points = @poitns WHERE passport = @Passport")
+vRP.Prepare("DropKill/insertDropKill", "INSERT IGNORE INTO dropkill_ranking(passport) VALUES (@Passport)")
+vRP.Prepare("DropKill/updateDropKill", "UPDATE dropkill_ranking SET points = @points WHERE passport = @Passport")
 
 local StartCoords = {
     vector3(-1593.79,-970.33,13.08),

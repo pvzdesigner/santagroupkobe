@@ -152,6 +152,11 @@ end
 -- duplicado de sx.table.join porque o sx demora a carregar
 function table_join( tA, tB )
 
+    if tB == nil then
+
+        return tA
+    end
+
     for _, v in each( tB ) do
 
         table.insert( tA, v )

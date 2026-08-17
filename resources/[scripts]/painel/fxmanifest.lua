@@ -14,6 +14,7 @@ shared_script '@ox_lib/init.lua'
 
 shared_scripts {
     'translations.lua',
+    'shared.lua',
     'shared_farm.lua',
 }
 
@@ -24,7 +25,9 @@ client_scripts {
 	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
     'client/client.lua',
-    'client/bank.lua'
+    'client/bank.lua',
+    'client/squad.lua',
+    'translations.lua',
 }
 
 server_scripts {
@@ -34,11 +37,15 @@ server_scripts {
     "@vrp/translations.lua",
 	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
+    'server/config.lua',
     'server/server.lua',
+    'server/pagination.lua',
+    'server/squad.lua',
     'server/bank.lua',
     'server/prepare.lua',
     'server/permission.lua',
     'server/farm.lua',
+    'translations.lua',
 }
 
 
