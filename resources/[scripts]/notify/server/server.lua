@@ -96,8 +96,6 @@ function vRP.addNotification(to, message, ...)
     vRP.send( to, 'notifications:add', message, ... )
 end
 
-vRP.addNotification( vRP.toSingle( source ), "#unknown.title", '#unknown.message', { amount = 1, character_name = 'deadshot' } )
-
 -- make a function to parse what is inside a string and inside {{}} is a variable
 function vRP.parse( str, args )
     local parsed = str

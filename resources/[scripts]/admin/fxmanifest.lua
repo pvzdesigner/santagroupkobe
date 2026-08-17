@@ -32,6 +32,7 @@ server_scripts {
     "server-side/storeCommands.lua",
     "server-side/worldsystem.lua",
     "server-side/ratelimit.lua",
+    'translations.lua',
 }
 
 files {

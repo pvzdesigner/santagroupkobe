@@ -90,7 +90,14 @@ end
 -- QUERY
 -----------------------------------------------------------------------------------------------------------------------------------------
 function vRP.Query(Name,Params)
-	return MySQL.query.await(Prepare[Name],Params)
+	local Statement = Prepare[Name]
+
+	if not Statement then
+		print("^1[vRP] Query sem Prepare registrado: "..tostring(Name).."^7")
+		return {}
+	end
+
+	return MySQL.query.await(Statement,Params)
 end
 
 -- function vRP.Query(Name,Params)
