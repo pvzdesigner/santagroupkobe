@@ -31,6 +31,6 @@ client_scripts{
 
 server_scripts {
     'translations.lua',
-    '@mysql-async/lib/MySQL.lua',
+    '@oxmysql/lib/MySQL.lua',
     'server/*.lua',
 }

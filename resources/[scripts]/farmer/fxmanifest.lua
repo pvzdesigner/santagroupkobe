@@ -17,8 +17,9 @@ client_scripts {
     '@sleepless_interact/init.lua',
     "@vrp/config/Themes.lua",
 	"@vrp/config/Native.lua",
-    "@vrp/config/Item.lua",
+    "@vrp/translations.lua",
 	"@vrp/config/translations.lua",
+	"@vrp/config/Item.lua",
     "@PolyZone/client.lua",
 	"@PolyZone/BoxZone.lua",
 	"@PolyZone/EntityZone.lua",
@@ -37,8 +38,9 @@ client_scripts {
 }
 
 server_scripts {
-	"@vrp/config/Item.lua",
+	"@vrp/translations.lua",
 	"@vrp/config/translations.lua",
+	"@vrp/config/Item.lua",
 	"server-side/core.lua",
 	"server-side/afkfarm.lua",
 	-- "server-side/routes.lua",

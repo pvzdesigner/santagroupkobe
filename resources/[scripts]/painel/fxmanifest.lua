@@ -20,8 +20,9 @@ shared_scripts {
 client_scripts {
     "@vrp/lib/Utils.lua",
     "@vrp/config/Groups.lua",
-    "@vrp/config/Item.lua",
+    "@vrp/translations.lua",
 	"@vrp/config/translations.lua",
+	"@vrp/config/Item.lua",
     'client/client.lua',
     'client/bank.lua'
 }
@@ -30,8 +31,9 @@ server_scripts {
     "@oxmysql/lib/MySQL.lua",
     "@vrp/lib/Utils.lua",
     "@vrp/config/Groups.lua",
-    "@vrp/config/Item.lua",
+    "@vrp/translations.lua",
 	"@vrp/config/translations.lua",
+	"@vrp/config/Item.lua",
     'server/server.lua',
     'server/bank.lua',
     'server/prepare.lua',

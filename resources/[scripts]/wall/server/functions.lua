@@ -193,7 +193,7 @@ local KeyFunctions = {
     end,
 }
 
-function Server.ManagePlayer(Player,Data)
+function server.ManagePlayer(Player,Data)
     local source = source
     local Passport = vRP.Passport(source)
     if Passport then
@@ -311,6 +311,6 @@ end
 
 function UpdatePlayerInfo(source)
     for Source,_ in pairs(AdminWall) do
-        Client._UpdateSource(Source,source,PlayerInfo[tostring(source)])
+        client._UpdateSource(Source,source,PlayerInfo[tostring(source)])
     end
 end
