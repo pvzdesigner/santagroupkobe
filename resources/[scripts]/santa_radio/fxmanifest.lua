@@ -1,6 +1,6 @@
 shared_script '@likizao_ac/client/library.lua'
 shared_script '@sx/linker.lua'
-shared_script '/shared/*.lua'
+shared_script 'shared/*.lua'
 shared_script 'translations.lua'
 
 fx_version "bodacious"

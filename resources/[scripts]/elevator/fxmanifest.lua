@@ -4,7 +4,7 @@ game 'gta5'
 ui_page 'nui/index.html'
 
 client_scripts {
-	'@vrp/lib/utils.lua',
+	'@vrp/lib/Utils.lua',
 	'client.lua',
 	"cfg.lua"
 }

@@ -19,8 +19,9 @@ client_scripts {
 server_scripts {
     "translations.lua",
     'shared.lua',
-	"@vrp/config/Item.lua",
+	"@vrp/translations.lua",
 	"@vrp/config/translations.lua",
+	"@vrp/config/Item.lua",
     "@vrp/config/Groups.lua",
 	"@vrp/lib/Utils.lua",
 	"server-side/core.lua",

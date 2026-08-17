@@ -46,6 +46,8 @@ client_scripts {
 }
 
 server_scripts {
+	"@vrp/translations.lua",
+	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
 	"@vrp/lib/Utils.lua",
     "@vrp/config/Groups.lua",

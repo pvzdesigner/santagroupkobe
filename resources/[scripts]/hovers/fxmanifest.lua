@@ -9,6 +9,8 @@ ui_page "web-side/index.html"
 client_scripts {
 	"@vrp/client/Native.lua",
 	"@vrp/config/Vehicle.lua",
+	"@vrp/translations.lua",
+	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
 	"@PolyZone/client.lua",
 	"@vrp/lib/Utils.lua",
@@ -21,6 +23,8 @@ client_scripts {
 
 server_scripts {
 	"@vrp/config/Vehicle.lua",
+	"@vrp/translations.lua",
+	"@vrp/config/translations.lua",
 	"@vrp/config/Item.lua",
 	"@vrp/lib/Utils.lua",
 	"server/main.lua"

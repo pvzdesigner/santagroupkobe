@@ -41,14 +41,14 @@ RegisterCommand("wall",function(source,args)
                 PlayerInfo[tostring(source)]["wall"] = false
             end
             UpdatePlayerInfo(source)
-            Client._ToggleAdminBlips(source, false)
+            client._ToggleAdminBlips(source, false)
         else
             AdminWall[source] = true
             if not exports["variables"]:GetLicenses("Dev")[License] and PlayerInfo[tostring(source)] then
                 PlayerInfo[tostring(source)]["wall"] = true
             end
             UpdatePlayerInfo(source)
-            Client._ToggleAdminBlips(source, true, PlayerInfo)
+            client._ToggleAdminBlips(source, true, PlayerInfo)
             exports["vrp"]:SendWebHook("wall", "**Passaporte:** " .. Passport .. " " .. vRP.FullName(Passport) .. "\n**usou wall na cds:** " .. Coords .. " " .. os.date("\n**[Data]: %d/%m/%Y [Hora]: %H:%M:%S**"), 9317187)
         end
     end
@@ -60,7 +60,7 @@ end)
 AddEventHandler("Connect",function(Passport,source)
     local NewPlayer = GeneratePlayerInfo(source)
     for Source,_ in pairs(AdminWall) do
-        Client._UpdateSource(Source,source,NewPlayer)
+        client._UpdateSource(Source,source,NewPlayer)
     end
 end)
 
@@ -70,7 +70,7 @@ AddEventHandler("Disconnect",function(Passport,source)
         if Source == source then
             AdminWall[Source] = nil
         else
-            Client._RemoveSource(Source,source)
+            client._RemoveSource(Source,source)
         end
     end
 end)
