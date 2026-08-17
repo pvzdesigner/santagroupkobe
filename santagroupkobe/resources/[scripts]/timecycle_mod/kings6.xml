@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<timecycle_modifier_data version="1.000000">
+    <modifier name="kings6" numMods="19" userFlags="0">
+        <light_directional_amb_col_r>0.250 0.700</light_directional_amb_col_r>
+        <light_directional_amb_col_g>0.400 0.300</light_directional_amb_col_g>
+        <light_directional_amb_col_b>0.500 0.100</light_directional_amb_col_b>
+        <light_amb_down_wrap>0.700 0.100</light_amb_down_wrap>
+        <light_natural_amb_up_col_r>0.050 0.000</light_natural_amb_up_col_r>
+        <light_natural_amb_up_col_g>0.120 0.000</light_natural_amb_up_col_g>
+        <light_natural_amb_up_col_b>1.200 0.000</light_natural_amb_up_col_b>
+        <nv_light_amb_down_mult>0.450 0.000</nv_light_amb_down_mult>
+        <sky_cloud_overall_color>0.300 0.000</sky_cloud_overall_color>
+        <sky_cloud_hdr>0.800 0.000</sky_cloud_hdr>
+        <fog_near_col_r>0.600 0.200</fog_near_col_r>
+        <fog_near_col_g>0.600 0.200</fog_near_col_g>
+        <fog_near_col_b>0.700 0.200</fog_near_col_b>
+        <fog_near_col_a>0.800 0.200</fog_near_col_a>
+        <fog_col_r>0.400 0.200</fog_col_r>
+        <fog_col_g>0.400 0.200</fog_col_g>
+        <fog_col_b>0.500 0.200</fog_col_b>
+        <fog_col_a>0.800 0.200</fog_col_a>
+        <fog_density>3.000 1.500</fog_density>
+    </modifier>
+</timecycle_modifier_data>

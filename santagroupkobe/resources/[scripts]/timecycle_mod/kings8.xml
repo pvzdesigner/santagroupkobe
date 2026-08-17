@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<timecycle_modifier_data version="1.000000">
+    <modifier name="kings8" numMods="18" userFlags="0">
+        <light_natural_push>0.365 0.000</light_natural_push>
+        <postfx_intensity_bloom>0.090 0.000</postfx_intensity_bloom>
+        <postfx_shift_cutoff>0.440 0.000</postfx_shift_cutoff>
+        <postfx_desaturation>1.260 0.000</postfx_desaturation>
+        <postfx_vignetting_radius>7.500 0.000</postfx_vignetting_radius>
+        <postfx_vignetting_col_r>0.063 0.000</postfx_vignetting_col_r>
+        <postfx_vignetting_col_g>0.086 0.000</postfx_vignetting_col_g>
+        <postfx_vignetting_col_b>0.106 0.000</postfx_vignetting_col_b>
+        <postfx_grad_top_col_r>0.094 0.000</postfx_grad_top_col_r>
+        <postfx_grad_top_col_g>0.400 0.000</postfx_grad_top_col_g>
+        <postfx_grad_top_col_b>0.667 0.000</postfx_grad_top_col_b>
+        <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+        <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+        <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+        <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+        <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+        <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+        <postfx_grad_midpoint>0.485 0.000</postfx_grad_midpoint>
+    </modifier>
+</timecycle_modifier_data>

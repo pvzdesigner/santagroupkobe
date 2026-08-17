@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/e5864653ea.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>ld_pets</title>
+</head>
+<body>
+  
+  <div class="dui">
+    <img src="images/dui.png" alt="">
+  </div>
+  
+  <div class="dog-interact-box">
+      <div class="dog-img">
+        <img src="images/dog1.png" alt="">
+      </div>
+      <div class="header">interagir</div>
+      <div class="alt">pug the champ</div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+        <path d="M9.5 11L0.406735 0.499998L18.5933 0.5L9.5 11Z" fill="white"/>
+      </svg>
+  </div>
+
+  <div class="pet-interact">
+    <div class="interact-box">
+      <div class="with">INTERAGINDO COM</div>
+      <div class="name">pug the champ</div>
+      <div class="radial-box">
+        <div class="radial">
+          <img src="images/hearth.png" alt="">
+          <div class="alt-radial"></div>
+          <svg class="stroke hearth-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_14_812" fill="white">
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z"/>
+            </mask>
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z" stroke="#7d209d" stroke-width="8" mask="url(#path-1-inside-1_14_812)"/>
+          </svg>  
+        </div>
+        <div class="radial">
+          <img src="images/water.png" alt="">
+          <div class="alt-radial"></div>
+          <svg class="stroke" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_14_812" fill="white">
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z"/>
+            </mask>
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z" stroke="#7d209d" stroke-width="8" mask="url(#path-1-inside-1_14_812)"/>
+          </svg>  
+        </div>
+        <div  class="radial">
+          <img src="images/mama.png" alt="">
+          <div class="alt-radial"></div>
+          <svg class="stroke" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_14_812" fill="white">
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z"/>
+            </mask>
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z" stroke="#7d209d" stroke-width="8" mask="url(#path-1-inside-1_14_812)"/>
+          </svg>  
+        </div>
+        <div  class="radial">
+          <img src="images/hap.png" alt="">
+          <div class="alt-radial"></div>
+          <svg class="stroke" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_14_812" fill="white">
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z"/>
+            </mask>
+            <path d="M24 0C30.3634 7.5883e-08 36.4664 2.52716 40.9669 7.02582C45.4675 11.5245 47.9973 17.6263 48 23.9898C48.0027 30.3532 45.4782 36.4572 40.9814 40.9597C36.4847 45.4622 30.3839 47.9946 24.0205 48C17.6571 48.0054 11.552 45.4835 7.04755 40.9887C2.54313 36.4938 0.0081636 30.3941 1.96549e-05 24.0307C-0.0081243 17.6673 2.51122 11.5611 7.00412 7.0548C11.497 2.54846 17.5956 0.0108936 23.959 3.49422e-05L23.9652 3.60003C18.5563 3.60926 13.3725 5.76619 9.5535 9.59657C5.73454 13.427 3.59309 18.6172 3.60002 24.0261C3.60694 29.435 5.76166 34.6198 9.59041 38.4404C13.4192 42.261 18.6085 44.4046 24.0174 44.4C29.4263 44.3954 34.612 42.2429 38.4342 38.4157C42.2564 34.5886 44.4023 29.4002 44.4 23.9913C44.3977 18.5824 42.2474 13.3958 38.4219 9.57194C34.5964 5.74808 29.4089 3.6 24 3.6L24 0Z" stroke="#7d209d" stroke-width="8" mask="url(#path-1-inside-1_14_812)"/>
+          </svg>  
+        </div>
+      </div>
+      <div class="interact-list"></div>
+    </div>
+  </div>
+ 
+  <div class="pet-select">
+    <div class="notification">Test</div>
+    <img src="images/head2.png" class="head-img2" alt="">
+    <img src="images/head.png" class="head-img" alt="">
+
+    <div class="category-box">
+      <div data-category="Dogs" style="background-color: rgba(125, 32, 157, 0.15); border: 1px solid rgba(125, 32, 157, 0.45);" class="category-item">
+        <img src="images/dog.png" alt="">
+      </div>
+      <div data-category="Cat" class="category-item">
+        <img src="images/cat.png" alt="">
+      </div>
+    </div>
+
+    <div class="features-box">
+      <div class="features-item">
+        <div class="text petyears">-----</div>
+        <img src="images/happy.png" alt="">
+      </div>
+      <div class="features-item">
+        <div class="text petlevel">-----</div>
+        <img src="images/start.png" alt="">
+      </div>
+      <div class="features-item">
+        <div class="text petgender">-----</div>
+        <img class="petsex" src="images/sec.png" alt="">
+      </div>
+    </div>
+
+    <div class="pet-name petname">-----</div>
+    <div class="pet-desc petlabel">-----</div>
+    <img src="images/statistic.png" class="stats-img" alt="">
+    <div class="stats-text">ESTATÍSTICAS</div>
+    <div class="pet-price petprice">$ 65 999</div>
+    <div style="width: 6%;" class="buy-button buy-pet">
+      <img src="images/follow.png" alt="">
+      <div class="text" style="left: 40%;position: absolute;">Comprar</div>
+    </div>
+
+    <div class="pets-box">
+
+    </div>
+
+
+    <div class="stats-box">
+      <div class="stats-item">
+        <div class="text">Vida</div>
+        <img src="images/hearth.png" alt="">
+        <div class="stats-alt-box">
+          <div class="stats-alt-color health-stats"></div>
+        </div>  
+      </div>
+      <div class="stats-item">
+        <div class="text">Energia</div>
+        <img src="images/happy.png" alt="">
+        <div class="stats-alt-box">
+          <div class="stats-alt-color energy-stats"></div>
+        </div>  
+      </div>
+      <div class="stats-item">
+        <div class="text">Fome</div>
+        <img src="images/mama.png" alt="">
+        <div class="stats-alt-box">
+          <div class="stats-alt-color hungry-stats"></div>
+        </div>  
+      </div>
+      <div class="stats-item">
+        <div class="text">Sede</div>
+        <img src="images/water.png" alt="">
+        <div class="stats-alt-box">
+          <div class="stats-alt-color thirsty-stats"></div>
+        </div>  
+      </div>
+    </div>
+
+    
+    <div class="main-head">ACESSÓRIOS DO PET</div>
+    <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="25" viewBox="0 0 36 25" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.454 15.2716L6.732 4.82546C6.82397 4.07395 7.06692 3.34987 7.44565 2.69845C7.82438 2.04703 8.33077 1.48228 8.93316 1.03948C9.53556 0.59668 10.221 0.285353 10.9467 0.12495C11.6724 -0.0354533 12.4227 -0.0414845 13.1508 0.107232C14.6934 0.423004 16.4232 1.06189 18 1.06189C19.5768 1.06189 21.3066 0.423004 22.8492 0.107232C23.5772 -0.0412021 24.3273 -0.0349559 25.0528 0.12558C25.7782 0.286116 26.4635 0.597493 27.0657 1.04027C27.6679 1.48304 28.1741 2.04769 28.5527 2.69897C28.9313 3.35024 29.1742 4.07414 29.2662 4.82546L30.5478 15.2716C32.5926 15.793 36 16.8028 36 19.4923C36 22.4224 32.0166 23.3881 29.844 23.8801C26.7516 24.5814 22.5648 25 18 25C13.4352 25 9.2484 24.5814 6.156 23.8801C3.9816 23.3881 0 22.4224 0 19.4923C0 16.8028 3.4074 15.793 5.454 15.2716ZM6.9354 20.2965C5.8104 20.0413 4.9374 19.7641 4.3164 19.4923C4.9374 19.2206 5.8104 18.9416 6.9354 18.6882C9.7038 18.0604 13.617 17.6565 18 17.6565C22.383 17.6565 26.2962 18.0604 29.0646 18.6882C30.1896 18.9434 31.0626 19.2206 31.6836 19.4923C31.0644 19.7641 30.1896 20.0413 29.0646 20.2965C26.2962 20.9243 22.383 21.3282 18 21.3282C13.617 21.3282 9.7038 20.9243 6.9354 20.2965Z" fill="#7d209d"/>
+    </svg>
+    <div class="clothPage">
+      <div class="clothbox">
+        <div class="decor-head">CHAPÉU</div>
+        <div class="decor-head" style="top: 27%;left: 60%;">COLEIRA</div>
+        <div class="decor-head" style="top: 56%;left: 56%;">ÓCULOS</div>
+        <div class="clothelement">
+          <div class="clotheader">Chapéu</div>
+          <div data-type="hat" data-direction="left" class="firstleft setcloth">&lt;</div>
+          <div data-type="hat" data-direction="right" class="firstright setcloth">&gt;</div>
+        </div>
+
+        <div class="clothelement">
+          <input value="0" class="firstelement" id="hatinput" type="number"> 
+          <div data-type="texture" data-category="hat" data-direction="left" class="firstleft settexture">&lt;</div>
+       
+          <input value="0" class="firstmain hattexture" type="number">
+          <div data-type="texture" data-category="hat" data-direction="right"  class="firstright settexture">&gt;</div>
+       
+          <div class="clotdraw">Estilo</div>
+        </div>
+
+        <div style="top: 10%;" class="clothelement">
+          <div data-type="leash" data-category="leash" data-direction="left" class="firstleft setcloth">&lt;</div>
+          <div data-type="leash" data-category="leash" data-direction="right"  class="firstright setcloth">&gt;</div>
+          <div class="clotdraw">Estilo</div>
+        </div>
+        <div style="top: 10%;" class="clothelement">
+          <input value="0" class="firstelement" id="leashinput" type="number"> 
+          <div data-type="texture" data-category="leash" data-direction="left" class="firstleft settexture">&lt;</div>
+          <input value="0"  class="firstmain leashtexture" type="number">
+          <div data-type="texture" data-category="leash" data-direction="right"  class="firstright settexture">&gt;</div>
+          <div class="clotdraw">Estilo</div>
+        </div>
+
+
+        <div style="top: 20%;" class="clothelement">
+          <div data-type="glasses" data-category="glasses" data-direction="left" class="firstleft setcloth">&lt;</div>
+          <div data-type="glasses" data-category="glasses" data-direction="right"  class="firstright setcloth">&gt;</div>
+          <div class="clotdraw">Estilo</div>
+        </div>
+        <div style="top: 20%;" class="clothelement">
+          <input value="0" class="firstelement" id="glassesinput" type="number"> 
+          <div data-type="texture" data-category="glasses" data-direction="left" class="firstleft settexture">&lt;</div>
+          <input value="0"  class="firstmain glassestexture" type="number">
+          <div data-type="texture" data-category="glasses" data-direction="right"  class="firstright settexture">&gt;</div>
+          <div class="clotdraw">Estilo</div>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+
+  <div class="buy-shop">
+    <div class="notification">Test</div>
+    <div class="bg"></div>
+    <img src="images/head.png" class="head" alt="">
+    <div id="charsDivBottom" class="shop-box">
+      <div class="item">
+        <img src="images/patas.png" class="ayaks" alt="">
+        <img src="images/patas2.png" style="left: 65%;top: 75%;opacity: 0.7;" class="ayaks" alt="">
+        <div class="color"></div>
+        <div class="color-hover"></div>
+
+        <img src="images/store1.png" class="bg" alt="">
+        <div class="stars-box">
+          <img src="images/stars.png" class="star" alt="">
+          <img src="images/stars.png" class="star" alt="">
+        </div>
+        <div class="type">Regular</div>
+        <div class="name">Pets Store</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente consectetur ipsum itaque, eos labore reiciendis unde corrupti placeat. Hic, molestiae.placeat. Hic, molestiaeplaceat. Hic, molestiaeplaceat. Hic, molestiaeplaceat. Hic, molestiaeplaceat. Hic, molestiaeplaceat. Hic, molestiae</div>
+        <div class="coord1">Paleto Bay</div>
+        <div class="coord1" style="left: 30%;">Sandy Shores</div>
+        <div class="price">$ 59 699</div>
+        <div class="purchase">Comprar</div>
+        <div class="map">
+          <img src="images/map.png" alt="">
+        </div>
+      </div>
+   
+  </div>
+  </div>
+
+  <div class="boss-menu">
+    <div class="bg-color"></div>
+    <div class="notification">Test</div>
+
+    <div id="shop-edit" class="edit-box">
+      <img src="images/dui.png" class="dogimg setedit shopattr" alt="">
+      <img src="images/dui.png" class="filterdogimg shopattr" alt="">
+      <div class="change-text"></div>
+      <div class="name-box">
+        <div class="text">NOME DA LOJA</div>
+        <input class="name-input shopname" value="Snoop Dogg" type="text">
+      </div>
+      <div class="name-box" style="top: 42%;">
+        <div class="text">IMG</div>
+        <input class="name-input shopvalue" value="https://media.discordapp.net/attachments/714590725660082177/1262785764794826832/image.png?ex=6697dc63&is=66968ae3&hm=c60f2bc05bd0888b40c3b2eaa20b12b84089c48a948a84ff1291f535cd3fad3c&=&format=webp&quality=lossless&width=494&height=266" type="text">
+      </div>
+      <div class="name-box" style="top: 54%;">
+        <div class="text">CDS DO PET</div>
+        <svg class="setpedcoords" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.36 14.48H0.64C0.286 14.48 0 14.766 0 15.12V15.84C0 15.928 0.072 16 0.16 16H15.84C15.928 16 16 15.928 16 15.84V15.12C16 14.766 15.714 14.48 15.36 14.48ZM2.914 12.8C2.954 12.8 2.994 12.796 3.034 12.79L6.398 12.2C6.438 12.192 6.476 12.174 6.504 12.144L14.982 3.666C15.0005 3.6475 15.0153 3.62552 15.0253 3.60133C15.0353 3.57713 15.0405 3.55119 15.0405 3.525C15.0405 3.49881 15.0353 3.47287 15.0253 3.44867C15.0153 3.42448 15.0005 3.4025 14.982 3.384L11.658 0.058C11.62 0.02 11.57 0 11.516 0C11.462 0 11.412 0.02 11.374 0.058L2.896 8.536C2.866 8.566 2.848 8.602 2.84 8.642L2.25 12.006C2.23054 12.1131 2.2375 12.2234 2.27025 12.3273C2.30301 12.4311 2.36059 12.5254 2.438 12.602C2.57 12.73 2.736 12.8 2.914 12.8Z" fill="#7d209d"/>
+          </svg>
+        </div>
+      <div class="name-box" style="top: 66%;">
+        <div class="text">CDS DA LOJA</div>
+       <svg class="setshopcoords" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M15.36 14.48H0.64C0.286 14.48 0 14.766 0 15.12V15.84C0 15.928 0.072 16 0.16 16H15.84C15.928 16 16 15.928 16 15.84V15.12C16 14.766 15.714 14.48 15.36 14.48ZM2.914 12.8C2.954 12.8 2.994 12.796 3.034 12.79L6.398 12.2C6.438 12.192 6.476 12.174 6.504 12.144L14.982 3.666C15.0005 3.6475 15.0153 3.62552 15.0253 3.60133C15.0353 3.57713 15.0405 3.55119 15.0405 3.525C15.0405 3.49881 15.0353 3.47287 15.0253 3.44867C15.0153 3.42448 15.0005 3.4025 14.982 3.384L11.658 0.058C11.62 0.02 11.57 0 11.516 0C11.462 0 11.412 0.02 11.374 0.058L2.896 8.536C2.866 8.566 2.848 8.602 2.84 8.642L2.25 12.006C2.23054 12.1131 2.2375 12.2234 2.27025 12.3273C2.30301 12.4311 2.36059 12.5254 2.438 12.602C2.57 12.73 2.736 12.8 2.914 12.8Z" fill="#7d209d"/>
+       </svg>
+      </div>
+      <div class="name-box" style="top: 78%;">
+        <div class="text">TELÃO</div>
+        <img src="images/ad.png" data-color="#0460A1" class="edit-img setprop" alt="">
+      </div>
+      <div class="save shopsettings-save" >SALVAR MUDANÇAS</div>
+    </div>
+
+    <div class="bg"></div>
+    <div class="menu-box">
+      <img src="images/bosshead.png" class="boss-head" alt="">
+      <div class="personel-panel">DASHBOARD
+        <img src="images/user-icon.png" alt="">
+      </div>
+      <div class="shop-money">
+        <div class="header">Seu caixa atual</div>
+        <div class="desc">Aqui você pode gerenciar suas finanças! Todo valor das vendas, ficará aqui para você sacar.</div>
+        <div class="total-header">VALOR TOTAL</div>
+        <div class="total-price">$ 0</div>
+        <svg class="withdraw-button" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+          <rect width="42" height="42" rx="4" fill="#7d209d"/>
+          <path d="M20.9994 24.6999C19.3434 24.6999 19.1994 23.9259 19.1994 23.7999H17.3994C17.3994 24.6279 17.9934 26.0949 20.0994 26.4279V27.3999H21.8994V26.4279C23.6994 26.1219 24.5994 24.9609 24.5994 23.7999C24.5994 22.7919 24.1314 21.0999 20.9994 21.0999C19.1994 21.0999 19.1994 20.5329 19.1994 20.1999C19.1994 19.8669 19.8294 19.2999 20.9994 19.2999C22.1694 19.2999 22.2504 19.8759 22.2594 20.1999H24.0594C24.0472 19.5867 23.8267 18.996 23.4341 18.5249C23.0416 18.0538 22.5003 17.7304 21.8994 17.6079V16.5999H20.0994V17.5809C18.2994 17.8779 17.3994 19.0389 17.3994 20.1999C17.3994 21.2079 17.8674 22.8999 20.9994 22.8999C22.7994 22.8999 22.7994 23.5119 22.7994 23.7999C22.7994 24.0879 22.2414 24.6999 20.9994 24.6999Z" fill="#0D0D0D"/>
+          <path d="M14.7 13H12V14.8H13.8V30.1C13.8 30.3387 13.8948 30.5676 14.0636 30.7364C14.2324 30.9052 14.4613 31 14.7 31H27.3C27.5387 31 27.7676 30.9052 27.9364 30.7364C28.1052 30.5676 28.2 30.3387 28.2 30.1V14.8H30V13H14.7ZM26.4 29.2H15.6V14.8H26.4V29.2Z" fill="#0D0D0D"/>
+        </svg>
+      </div>
+      <div class="activity-box">
+        <div class="header">HISTÓRICO</div>
+        <div class="desc">aqui você verá as vendas</div>
+        <div class="sell-box">
+          <div class="sell-item">
+            <div class="name">Dante Rizzo</div>
+            <img src="images/userimg.png" alt="">
+            <div class="alt">bought <span style="color: #7d209d;">Corgi</span> for <span style="color: #7d209d;">$65 656</span></div>
+          </div>
+          <div class="sell-item">
+            <div class="name">Dante Rizzo</div>
+            <img src="images/userimg.png" alt="">
+            <div class="alt">bought <span style="color: #7d209d;">Corgi</span> for <span style="color: #7d209d;">$65 656</span></div>
+          </div>
+          <div class="sell-item">
+            <div class="name">Dante Rizzo</div>
+            <img src="images/userimg.png" alt="">
+            <div class="alt">bought <span style="color: #7d209d;">Corgi</span> for <span style="color: #7d209d;">$65 656</span></div>
+          </div>
+          <div class="sell-item">
+            <div class="name">Dante Rizzo</div>
+            <img src="images/userimg.png" alt="">
+            <div class="alt">bought <span style="color: #7d209d;">Corgi</span> for <span style="color: #7d209d;">$65 656</span></div>
+          </div>
+          <div class="sell-item">
+            <div class="name">Dante Rizzo</div>
+            <img src="images/userimg.png" alt="">
+            <div class="alt">bought <span style="color: #7d209d;">Corgi</span> for <span style="color: #7d209d;">$65 656</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="level-box">
+        <div class="name">LD Pet Shop</div>
+        <i class="fa fa-gear"></i>
+        <div class="level">3</div>
+        <img src="images/88.png" alt="">
+        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="path-1-inside-1_42_322" fill="white">
+          <path d="M23 0C29.0827 7.2536e-08 34.9178 2.40957 39.2283 6.70141C43.5387 10.9933 45.9735 16.8178 45.9998 22.9005C46.0261 28.9832 43.6418 34.8286 39.3686 39.1576C35.0955 43.4866 29.2815 45.9465 23.1989 45.9991C17.1164 46.0518 11.2607 43.6927 6.91333 39.4383C2.56593 35.1839 0.0808526 29.3806 0.00193578 23.2984C-0.076981 17.2162 2.25669 11.3503 6.49224 6.98457C10.7278 2.61881 16.5203 0.108661 22.6021 0.00344135L22.6419 2.3031C17.1683 2.3978 11.955 4.65693 8.14302 8.58612C4.33102 12.5153 2.23072 17.7945 2.30174 23.2686C2.37277 28.7426 4.60933 33.9655 8.522 37.7945C12.4347 41.6235 17.7048 43.7466 23.179 43.6992C28.6533 43.6519 33.8859 41.4379 37.7318 37.5418C41.5776 33.6458 43.7235 28.3849 43.6998 22.9105C43.6761 17.4361 41.4848 12.1939 37.6054 8.33127C33.726 4.46862 28.4745 2.3 23 2.3L23 0Z"/>
+          </mask>
+          <path d="M23 0C29.0827 7.2536e-08 34.9178 2.40957 39.2283 6.70141C43.5387 10.9933 45.9735 16.8178 45.9998 22.9005C46.0261 28.9832 43.6418 34.8286 39.3686 39.1576C35.0955 43.4866 29.2815 45.9465 23.1989 45.9991C17.1164 46.0518 11.2607 43.6927 6.91333 39.4383C2.56593 35.1839 0.0808526 29.3806 0.00193578 23.2984C-0.076981 17.2162 2.25669 11.3503 6.49224 6.98457C10.7278 2.61881 16.5203 0.108661 22.6021 0.00344135L22.6419 2.3031C17.1683 2.3978 11.955 4.65693 8.14302 8.58612C4.33102 12.5153 2.23072 17.7945 2.30174 23.2686C2.37277 28.7426 4.60933 33.9655 8.522 37.7945C12.4347 41.6235 17.7048 43.7466 23.179 43.6992C28.6533 43.6519 33.8859 41.4379 37.7318 37.5418C41.5776 33.6458 43.7235 28.3849 43.6998 22.9105C43.6761 17.4361 41.4848 12.1939 37.6054 8.33127C33.726 4.46862 28.4745 2.3 23 2.3L23 0Z" stroke="#7d209d" stroke-width="4" mask="url(#path-1-inside-1_42_322)"/>
+        </svg>
+        <div class="current-xp">200 xp</div>
+        <div class="required-xp">1000 xp</div>
+        <div class="progress">
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="mypets-box">
+        <div class="mypets-list">
+          <div class="edit-box">
+            <img src="images/rottweiler.png" class="dogimg setedit" alt="">
+            <img src="images/rottweiler.png" class="filterdogimg" alt="">
+            <div class="change-text"></div>
+            <div class="name-box">
+              <div class="text">NOME DO PET</div>
+              <input class="name-input setname" value="Snoop Dogg" type="text">
+            </div>
+            <div class="name-box" style="top: 47%;">
+              <div class="text">IMG</div>
+              <input class="name-input setimg" value="https://media.discordapp.net/attachments/714590725660082177/1262785764794826832/image.png?ex=6697dc63&is=66968ae3&hm=c60f2bc05bd0888b40c3b2eaa20b12b84089c48a948a84ff1291f535cd3fad3c&=&format=webp&quality=lossless&width=494&height=266" type="text">
+            </div>
+            <div class="name-box" style="top: 59%;">
+              <div class="text">PREÇO</div>
+              <input class="name-input setprice" style="color: #7d209d;"  type="number">
+            </div>
+            <div class="name-box" style="top: 71%;">
+              <div class="text">GÊNERO</div>
+              <img src="images/male.png" data-color="#0460A1" class="sex male" alt="">
+              <img src="images/female.png" data-color="#ED6898" style="left: 90%;" class="sex female" alt="">
+            </div>
+            <div class="save mypets-save" >SALVAR MUDANÇAS</div>
+          </div>
+
+          <div class="mypet-item">
+            <div class="bg-blur"></div>
+            <img src="images/rottweiler.png" class="dog-img" alt="">
+            <img src="images/rottweiler.png" class="dog-blur" alt="">
+            <img src="images/edit.png" class="edit" alt="">
+            <div class="name">Dante Rizzo</div>
+            <div class="name-alt">pug the champ</div>
+            <div class="levels-box">6 level</div>
+            <div class="sex-box">male
+              <img src="images/male.png" alt="">
+            </div>
+            <div class="hr"></div>
+            <div class="price-header">Price</div>
+            <div class="prices">$76 369</div>
+
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="4" fill="#7d209d"/>
+              <path d="M16.9998 28.9999C17.7362 28.9999 18.3332 28.403 18.3332 27.6666C18.3332 26.9302 17.7362 26.3333 16.9998 26.3333C16.2635 26.3333 15.6665 26.9302 15.6665 27.6666C15.6665 28.403 16.2635 28.9999 16.9998 28.9999Z" fill="#0D0D0D"/>
+              <path d="M26.3333 28.9999C27.0697 28.9999 27.6667 28.403 27.6667 27.6666C27.6667 26.9302 27.0697 26.3333 26.3333 26.3333C25.597 26.3333 25 26.9302 25 27.6666C25 28.403 25.597 28.9999 26.3333 28.9999Z" fill="#0D0D0D"/>
+              <path d="M28.7 15.3658C28.6063 15.2513 28.4883 15.159 28.3546 15.0957C28.2208 15.0324 28.0746 14.9997 27.9267 15H15.2454L14.99 13.5508C14.9628 13.3965 14.882 13.2566 14.7619 13.1559C14.6418 13.0552 14.4901 13 14.3333 13H11.6667C11.4899 13 11.3203 13.0702 11.1953 13.1953C11.0702 13.3203 11 13.4899 11 13.6667C11 13.8435 11.0702 14.013 11.1953 14.1381C11.3203 14.2631 11.4899 14.3333 11.6667 14.3333H13.7742L15.6767 25.1158C15.7039 25.2702 15.7847 25.41 15.9047 25.5108C16.0248 25.6115 16.1766 25.6667 16.3333 25.6667H27C27.1768 25.6667 27.3464 25.5964 27.4714 25.4714C27.5964 25.3464 27.6667 25.1768 27.6667 25C27.6667 24.8232 27.5964 24.6536 27.4714 24.5286C27.3464 24.4036 27.1768 24.3333 27 24.3333H16.8925L16.6575 23H26.7267C26.9579 22.9997 27.1819 22.9195 27.3607 22.7731C27.5396 22.6266 27.6624 22.4228 27.7083 22.1962L28.9083 16.1963C28.9372 16.051 28.9336 15.9012 28.8975 15.7576C28.8615 15.614 28.794 15.4802 28.7 15.3658Z" fill="#0D0D0D"/>
+            </svg>
+              
+          </div>
+
+          <div class="mypet-item">
+            <div class="locked-bg">
+              <img src="images/lock.png" alt="">
+              <div class="text" style="color: white;">This pet is locked</div>
+              <div class="text" style="top: 60%;">reach 15 level to unlock this pet</div>
+            </div>
+            <div class="bg-blur"></div>
+            <img src="images/rottweiler.png" class="dog-img" alt="">
+            <img src="images/rottweiler.png" class="dog-blur" alt="">
+            <img src="images/edit.png" class="edit" alt="">
+            <div class="name">Dante Rizzo</div>
+            <div class="name-alt">pug the champ</div>
+            <div class="levels-box">6 level</div>
+            <div class="sex-box">male
+              <img src="images/male.png" alt="">
+            </div>
+            <div class="hr"></div>
+            <div class="price-header">Price</div>
+            <div class="prices">$76 369</div>
+
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="4" fill="#7d209d"/>
+              <path d="M16.9998 28.9999C17.7362 28.9999 18.3332 28.403 18.3332 27.6666C18.3332 26.9302 17.7362 26.3333 16.9998 26.3333C16.2635 26.3333 15.6665 26.9302 15.6665 27.6666C15.6665 28.403 16.2635 28.9999 16.9998 28.9999Z" fill="#0D0D0D"/>
+              <path d="M26.3333 28.9999C27.0697 28.9999 27.6667 28.403 27.6667 27.6666C27.6667 26.9302 27.0697 26.3333 26.3333 26.3333C25.597 26.3333 25 26.9302 25 27.6666C25 28.403 25.597 28.9999 26.3333 28.9999Z" fill="#0D0D0D"/>
+              <path d="M28.7 15.3658C28.6063 15.2513 28.4883 15.159 28.3546 15.0957C28.2208 15.0324 28.0746 14.9997 27.9267 15H15.2454L14.99 13.5508C14.9628 13.3965 14.882 13.2566 14.7619 13.1559C14.6418 13.0552 14.4901 13 14.3333 13H11.6667C11.4899 13 11.3203 13.0702 11.1953 13.1953C11.0702 13.3203 11 13.4899 11 13.6667C11 13.8435 11.0702 14.013 11.1953 14.1381C11.3203 14.2631 11.4899 14.3333 11.6667 14.3333H13.7742L15.6767 25.1158C15.7039 25.2702 15.7847 25.41 15.9047 25.5108C16.0248 25.6115 16.1766 25.6667 16.3333 25.6667H27C27.1768 25.6667 27.3464 25.5964 27.4714 25.4714C27.5964 25.3464 27.6667 25.1768 27.6667 25C27.6667 24.8232 27.5964 24.6536 27.4714 24.5286C27.3464 24.4036 27.1768 24.3333 27 24.3333H16.8925L16.6575 23H26.7267C26.9579 22.9997 27.1819 22.9195 27.3607 22.7731C27.5396 22.6266 27.6624 22.4228 27.7083 22.1962L28.9083 16.1963C28.9372 16.051 28.9336 15.9012 28.8975 15.7576C28.8615 15.614 28.794 15.4802 28.7 15.3658Z" fill="#0D0D0D"/>
+            </svg>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="personel-box">
+        <div class="members-header">
+          <div class="text">Membros</div>
+          <img src="images/members-icon.png" alt="">
+        </div>
+        <div class="hired-header">
+          <div class="text">Contratados</div>
+          <img src="images/members-icon.png" alt="">
+        </div>
+        <div class="members-box"></div>
+        <div class="hired-box"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="shop-menu">
+    <div class="notification">Test</div>
+      <div class="menu-box">
+        <img src="images/bosshead.png" class="boss-head" alt="">
+        <div data-category="dog" class="shop-panel"><div class="text">Ração de Cachorro </div>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.104 4.37831C20.5396 3.69918 19.7562 3.23881 18.8889 3.07674C18.7854 2.54246 18.5686 2.03666 18.2531 1.59357C17.9375 1.15049 17.5306 0.780446 17.0599 0.508488C16.5892 0.23653 16.0656 0.0689994 15.5247 0.0172315C14.9837 -0.0345365 14.4379 0.0306658 13.9243 0.208427C13.4107 0.386188 12.9412 0.67236 12.5476 1.04758C12.1539 1.4228 11.8454 1.87832 11.6428 2.38331C11.4402 2.88831 11.3482 3.43099 11.3732 3.97465C11.3981 4.51832 11.5393 5.05027 11.7874 5.53453L5.52631 11.8096C5.04277 11.5613 4.51161 11.4198 3.96875 11.3948C3.4259 11.3698 2.88402 11.4619 2.37977 11.6648C1.87553 11.8678 1.42069 12.1768 1.04603 12.571C0.671362 12.9652 0.385614 13.4354 0.208117 13.9498C0.0306203 14.4642 -0.0344852 15.0107 0.0172059 15.5525C0.068897 16.0943 0.236179 16.6186 0.507733 17.09C0.779287 17.5614 1.14878 17.9689 1.59121 18.2849C2.03364 18.601 2.53868 18.8181 3.07217 18.9217C3.17543 19.4562 3.39211 19.9621 3.70757 20.4054C4.02302 20.8487 4.42988 21.2189 4.9006 21.491C5.37132 21.7631 5.89493 21.9308 6.43597 21.9827C6.97702 22.0346 7.52288 21.9695 8.03661 21.7917C8.55034 21.614 9.01996 21.3278 9.41367 20.9525C9.80738 20.5773 10.116 20.1217 10.3186 19.6166C10.5213 19.1115 10.6132 18.5687 10.5882 18.025C10.5632 17.4812 10.4218 16.9492 10.1737 16.4649L16.4395 10.1888C17.2181 10.5988 18.1148 10.7252 18.9762 10.5462C19.8375 10.3673 20.6101 9.89417 21.1616 9.20782C21.7131 8.52147 22.0094 7.66453 21.9998 6.78357C21.9901 5.90262 21.6752 5.05239 21.1087 4.37831H21.104ZM19.3357 7.81751C19.0978 8.08924 18.771 8.26718 18.4139 8.31942C18.0568 8.37165 17.6928 8.29475 17.3872 8.10252C17.0231 7.87173 16.5913 7.77195 16.163 7.81961C15.7348 7.86727 15.3354 8.05952 15.0308 8.36474L8.35232 15.0531C8.04771 15.3583 7.85591 15.7583 7.8085 16.1873C7.76109 16.6162 7.86087 17.0485 8.09144 17.413C8.2204 17.6212 8.29721 17.8576 8.31531 18.1019C8.33341 18.3462 8.29227 18.5913 8.19539 18.8163C8.09851 19.0413 7.94877 19.2395 7.75893 19.394C7.56908 19.5485 7.34475 19.6548 7.10504 19.7038C6.86534 19.7528 6.61737 19.743 6.38225 19.6753C6.14713 19.6076 5.93184 19.484 5.75471 19.315C5.57758 19.146 5.44386 18.9366 5.36495 18.7047C5.28603 18.4728 5.26426 18.2252 5.30148 17.9831C5.32622 17.8207 5.31563 17.6549 5.27046 17.4971C5.22528 17.3392 5.14658 17.1929 5.03974 17.0684C4.9329 16.9438 4.80044 16.8438 4.65143 16.7752C4.50242 16.7066 4.34038 16.6711 4.17639 16.6711C4.11763 16.6708 4.05894 16.6752 4.00089 16.6844C3.75902 16.7219 3.51168 16.7002 3.27996 16.6213C3.04824 16.5423 2.83902 16.4085 2.67014 16.2311C2.50125 16.0536 2.37771 15.838 2.31005 15.6024C2.24238 15.3668 2.2326 15.1184 2.28155 14.8782C2.33049 14.638 2.43669 14.4133 2.59111 14.2231C2.74553 14.0329 2.94359 13.883 3.16838 13.786C3.39318 13.6891 3.63805 13.648 3.88212 13.6663C4.12619 13.6846 4.36222 13.7618 4.57008 13.8912C4.93411 14.1217 5.36565 14.2214 5.79373 14.1737C6.22181 14.1261 6.62096 13.934 6.92556 13.629L13.604 6.94061C13.9088 6.63549 14.1007 6.23557 14.1483 5.80664C14.1959 5.37772 14.0963 4.94534 13.8658 4.58067C13.7366 4.3725 13.6596 4.13612 13.6413 3.89169C13.623 3.64726 13.664 3.40202 13.7608 3.17689C13.8576 2.95176 14.0074 2.75342 14.1972 2.59877C14.3871 2.44412 14.6116 2.33775 14.8514 2.28874C15.0912 2.23972 15.3393 2.24952 15.5745 2.31728C15.8097 2.38504 16.0251 2.50877 16.2022 2.67791C16.3794 2.84704 16.513 3.05658 16.5919 3.28864C16.6707 3.5207 16.6923 3.76841 16.6548 4.01064C16.6271 4.18802 16.6417 4.36945 16.6972 4.54015C16.7528 4.71084 16.8478 4.86598 16.9746 4.99294C17.1014 5.11989 17.2563 5.21507 17.4267 5.27071C17.5972 5.32636 17.7783 5.3409 17.9554 5.31316C18.2639 5.26367 18.5801 5.31071 18.8609 5.44787C19.1417 5.58503 19.3734 5.80562 19.5244 6.07954C19.6753 6.35346 19.7382 6.66736 19.7045 6.9784C19.6707 7.28945 19.5419 7.58248 19.3357 7.81751Z" fill="#676767"/>
+          </svg>
+        </div>
+        <div data-category="cat" style="top: 30%;" class="shop-panel"><div class="text">Ração de Gato</div>  
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.35713 2.10102C8.35613 3.10202 7.77713 4.43602 7.44513 5.77402C7.11213 7.11802 7.01413 8.52102 7.01513 9.72402C7.0141 9.80919 6.97988 9.8906 6.91974 9.95092C6.8596 10.0112 6.7783 10.0457 6.69313 10.047C4.92213 10.054 2.67713 10.267 0.861134 11.134C0.179134 11.46 -0.105866 12.132 0.0351343 12.769C0.168134 13.365 0.650134 13.854 1.30213 14.013C2.09713 14.207 3.01913 14.458 3.82113 14.743C4.22213 14.885 4.58113 15.031 4.87313 15.177C5.17513 15.329 5.36013 15.457 5.45113 15.549C5.54213 15.639 5.67113 15.824 5.82213 16.126C5.96813 16.418 6.11413 16.776 6.25613 17.177C6.54013 17.978 6.79013 18.9 6.98413 19.694C7.14313 20.346 7.63213 20.829 8.22913 20.961C8.86613 21.103 9.53813 20.818 9.86413 20.136C10.7311 18.323 10.9441 16.082 10.9541 14.313C10.9541 14.139 11.1011 13.992 11.2771 13.992C12.4791 13.992 13.8831 13.894 15.2271 13.561C16.5671 13.228 17.9011 12.649 18.9031 11.647C20.0231 10.527 20.5711 9.03802 20.8201 7.59102C21.0701 6.14002 21.0291 4.66502 20.9151 3.49902C20.8347 2.62177 20.4496 1.80039 19.8267 1.17747C19.2038 0.554563 18.3824 0.169457 17.5051 0.0890169C16.3391 -0.0239831 14.8651 -0.0649831 13.4131 0.184017C11.9661 0.434017 10.4771 0.982017 9.35713 2.10102ZM15.0001 2.99802C15.2654 2.99802 15.5197 3.10337 15.7072 3.29091C15.8948 3.47845 16.0001 3.7328 16.0001 3.99802C16.0001 4.26323 15.8948 4.51759 15.7072 4.70512C15.5197 4.89266 15.2654 4.99802 15.0001 4.99802C14.7349 4.99802 14.4806 4.89266 14.293 4.70512C14.1055 4.51759 14.0001 4.26323 14.0001 3.99802C14.0001 3.7328 14.1055 3.47845 14.293 3.29091C14.4806 3.10337 14.7349 2.99802 15.0001 2.99802Z" fill="#676767"/>
+          </svg>  
+        </div>
+        <div data-category="toys" style="top: 40%;" class="shop-panel"><div class="text">Brinquedos</div>  
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5 0C8.4233 0 6.39323 0.615814 4.66652 1.76957C2.9398 2.92332 1.59399 4.5632 0.799269 6.48182C0.00454949 8.40045 -0.203385 10.5116 0.201759 12.5484C0.606904 14.5852 1.60693 16.4562 3.07538 17.9246C4.54383 19.3931 6.41475 20.3931 8.45155 20.7982C10.4884 21.2034 12.5996 20.9954 14.5182 20.2007C16.4368 19.406 18.0767 18.0602 19.2304 16.3335C20.3842 14.6068 21 12.5767 21 10.5C20.9971 7.71613 19.8899 5.04712 17.9214 3.07862C15.9529 1.11013 13.2839 0.00293982 10.5 0ZM18.9242 7.67308C17.4038 7.18201 15.8294 6.8769 14.2356 6.76442C14.1231 5.17058 13.818 3.59624 13.3269 2.07577C14.6275 2.51559 15.809 3.24941 16.7798 4.22018C17.7506 5.19096 18.4844 6.37254 18.9242 7.67308ZM6.15866 2.75019C8.67471 3.58179 10.9891 4.9302 12.9534 6.70889C8.91456 6.67388 4.96147 7.87368 1.62347 10.1476C1.68461 8.6299 2.13354 7.15313 2.92746 5.85816C3.72138 4.56318 4.83381 3.49318 6.15866 2.75019ZM10.8513 19.3765C13.1255 16.0382 14.3253 12.0848 14.2901 8.04562C16.0693 10.0101 17.418 12.3249 18.2498 14.8413C17.5068 16.1662 16.4368 17.2786 15.1418 18.0725C13.8469 18.8665 12.3701 19.3154 10.8524 19.3765H10.8513Z" fill="#676767"/>
+          </svg>
+        </div>
+        <div data-category="health" style="top: 50%;" class="shop-panel"><div class="text">Saúde do Pet</div>  
+          <svg style="top: 13%;" width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.71875 16.3333H11.2812V13.4167H14.25V9.91667H11.2812V7H7.71875V9.91667H4.75V13.4167H7.71875V16.3333ZM0 21V7L9.5 0L19 7V21H0Z" fill="#676767"/>
+          </svg>
+        </div>
+
+        <div class="basket-list">
+          <div class="basket-item">
+            <img src="images/itembone.png" alt="">
+            <div class="price">$56</div>
+            <div class="name">Big boy done</div>
+            <div class="arti">+</div>
+            <div class="eksi">-</div>
+            <div class="count">1</div>
+          </div>
+        </div>
+
+        <div class="total-price-text">Valor total</div>
+        <div class="total-payment-text">Pagamento</div>
+        <div class="total-payment">$0</div>
+        <div class="pay-button" data-method="card">Pagar com Cartão</div>
+        <div class="pay-button" style="left: 11.5%;" data-method="cash">Pagar com Carteira</div>
+
+        <div class="item-list">
+          <div class="item">
+            <img src="images/itembowl.png" alt="">
+            <img src="images/itembowl.png" alt="">
+            <div class="price">$56</div>
+            <div class="alt">Treats </div>
+            <div class="name">Big boy bone</div>
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="4" fill="#7d209d"/>
+              <path d="M15.0003 26.9999C15.7367 26.9999 16.3337 26.403 16.3337 25.6666C16.3337 24.9302 15.7367 24.3333 15.0003 24.3333C14.2639 24.3333 13.667 24.9302 13.667 25.6666C13.667 26.403 14.2639 26.9999 15.0003 26.9999Z" fill="#0A0A0A"/>
+              <path d="M24.3333 26.9999C25.0697 26.9999 25.6667 26.403 25.6667 25.6666C25.6667 24.9302 25.0697 24.3333 24.3333 24.3333C23.597 24.3333 23 24.9302 23 25.6666C23 26.403 23.597 26.9999 24.3333 26.9999Z" fill="#0A0A0A"/>
+              <path d="M26.7 13.3658C26.6063 13.2513 26.4883 13.159 26.3546 13.0957C26.2208 13.0324 26.0746 12.9997 25.9267 13H13.2454L12.99 11.5508C12.9628 11.3965 12.882 11.2566 12.7619 11.1559C12.6418 11.0552 12.4901 11 12.3333 11H9.66667C9.48986 11 9.32029 11.0702 9.19526 11.1953C9.07024 11.3203 9 11.4899 9 11.6667C9 11.8435 9.07024 12.013 9.19526 12.1381C9.32029 12.2631 9.48986 12.3333 9.66667 12.3333H11.7742L13.6767 23.1158C13.7039 23.2702 13.7847 23.41 13.9047 23.5108C14.0248 23.6115 14.1766 23.6667 14.3333 23.6667H25C25.1768 23.6667 25.3464 23.5964 25.4714 23.4714C25.5964 23.3464 25.6667 23.1768 25.6667 23C25.6667 22.8232 25.5964 22.6536 25.4714 22.5286C25.3464 22.4036 25.1768 22.3333 25 22.3333H14.8925L14.6575 21H24.7267C24.9579 20.9997 25.1819 20.9195 25.3607 20.7731C25.5396 20.6266 25.6624 20.4228 25.7083 20.1962L26.9083 14.1963C26.9372 14.051 26.9336 13.9012 26.8975 13.7576C26.8615 13.614 26.794 13.4802 26.7 13.3658Z" fill="#0A0A0A"/>
+            </svg>
+          </div>
+          <div class="item">
+            <img src="images/itembowl.png" alt="">
+            <img src="images/itembowl.png" alt="">
+            <div class="price">$56</div>
+            <div class="alt">Treats </div>
+            <div class="name">Big boy bone</div>
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="4" fill="#7d209d"/>
+              <path d="M15.0003 26.9999C15.7367 26.9999 16.3337 26.403 16.3337 25.6666C16.3337 24.9302 15.7367 24.3333 15.0003 24.3333C14.2639 24.3333 13.667 24.9302 13.667 25.6666C13.667 26.403 14.2639 26.9999 15.0003 26.9999Z" fill="#0A0A0A"/>
+              <path d="M24.3333 26.9999C25.0697 26.9999 25.6667 26.403 25.6667 25.6666C25.6667 24.9302 25.0697 24.3333 24.3333 24.3333C23.597 24.3333 23 24.9302 23 25.6666C23 26.403 23.597 26.9999 24.3333 26.9999Z" fill="#0A0A0A"/>
+              <path d="M26.7 13.3658C26.6063 13.2513 26.4883 13.159 26.3546 13.0957C26.2208 13.0324 26.0746 12.9997 25.9267 13H13.2454L12.99 11.5508C12.9628 11.3965 12.882 11.2566 12.7619 11.1559C12.6418 11.0552 12.4901 11 12.3333 11H9.66667C9.48986 11 9.32029 11.0702 9.19526 11.1953C9.07024 11.3203 9 11.4899 9 11.6667C9 11.8435 9.07024 12.013 9.19526 12.1381C9.32029 12.2631 9.48986 12.3333 9.66667 12.3333H11.7742L13.6767 23.1158C13.7039 23.2702 13.7847 23.41 13.9047 23.5108C14.0248 23.6115 14.1766 23.6667 14.3333 23.6667H25C25.1768 23.6667 25.3464 23.5964 25.4714 23.4714C25.5964 23.3464 25.6667 23.1768 25.6667 23C25.6667 22.8232 25.5964 22.6536 25.4714 22.5286C25.3464 22.4036 25.1768 22.3333 25 22.3333H14.8925L14.6575 21H24.7267C24.9579 20.9997 25.1819 20.9195 25.3607 20.7731C25.5396 20.6266 25.6624 20.4228 25.7083 20.1962L26.9083 14.1963C26.9372 14.051 26.9336 13.9012 26.8975 13.7576C26.8615 13.614 26.794 13.4802 26.7 13.3658Z" fill="#0A0A0A"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="mypets">
+    <img src="images/head2.png" class="head-img2" alt="">
+    <img src="images/head.png" class="head-img" alt="">
+    <div class="owned-text">Seus pets adotados</div>
+
+    <div class="owned-box">
+      <div class="owned-item">
+        <img src="images/pug.png" class="pet-img" alt="">
+        <div class="pet-name">Champer</div>
+        <div class="pet-features">3 level , 7 years old </div>
+        <img src="images/sec.png" class="sex" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<script src="./script.js" type="text/javascript"></script>

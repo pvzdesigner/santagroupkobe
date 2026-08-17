@@ -1,0 +1,2986 @@
+:root{
+  --cor-preto: 31, 31, 31;
+  --cor-principal: 125, 32, 157;
+}
+
+* {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: SF-Pro-Display;
+  /* overflow: hidden; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: none;
+  overflow: hidden;
+}
+
+.pet-select{
+  display: none;
+}
+
+.pet-interact{
+  display: none;
+}
+
+.buy-shop{
+  display: none;
+}
+
+.boss-menu{
+  display: none;
+}
+
+.mypets{
+  display: none;
+}
+
+.shop-menu{
+  display: none;
+}
+
+
+@font-face {
+  font-family: SF-Pro-Display;
+  src: url("fonts/bold.OTF") format("truetype");
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+  background:none;
+  border-radius: 28px;
+}
+  
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  width: 15px;
+  background-color: none;
+  border-radius: 35px;
+}
+
+.pet-select .clothPage{
+  width: 20%;
+  height: 60%;
+  border-radius: 1vh;
+  overflow: initial;
+  z-index: 2;
+  flex-shrink: 0;
+  position: absolute;
+  top: 25%;
+  left: 82%;
+}
+
+.pet-select .clothbox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.pet-select .decor-head{
+  width: 100%;
+  height: 10%;
+  left: 58%;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+}
+
+.pet-select .main-head{
+  left: 83%;
+  top: 20%;
+  z-index: 5;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2vh;
+}
+
+.pet-select .main-svg{
+  left: 95%;
+  top: 20%;
+  z-index: 5;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2vh;
+}
+
+.pet-select .clothelement{
+  width: 75%;
+  height: 8%;
+  margin-top: 0.5rem;
+  top: 1rem;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(var(--cor-preto), 0.80);
+  display: flex;
+  overflow: inherit;
+  text-align: center;
+  justify-content: center;
+}
+
+.pet-select .clotheader{
+  color: white;
+  font-family: SF-Pro-Display;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.pet-select .clotdraw{
+  color: white;
+  font-family: SF-Pro-Display;
+  font-size: 1.4vh;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+
+.pet-select .firstleft{
+  width: 5%;
+  height: 55%;
+  color: #cac9c9;
+  top: 30%;
+  left: 5%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-family: SF-Pro-Display;
+  transition-duration: 0.5s;
+  position: absolute;
+}
+
+.pet-select .firstleft:hover{
+  transform: scale(1.1);
+}
+
+.pet-select .firstelement{
+  background-color: transparent;
+  width: 20%;
+  height: 30%;
+  border: none;
+  top: -81%;
+  left: 52%;
+  font-size: 1.5vh;
+  outline: none;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+}
+
+.pet-select .firstmain{
+  background-color: transparent;
+  width: 20%;
+  height: 30%;
+  border: none;
+  top:35%;
+  left: 52%;
+  font-size: 1.5vh;
+  outline: none;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+}
+
+
+.pet-select .firstright{
+  width: 5%;
+  height: 55%;
+  color: #cac9c9;
+  top: 30%;
+  left: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-family: SF-Pro-Display;
+  transition-duration: 0.5s;
+  position: absolute;
+}
+
+.pet-select .firstright:hover{
+  transform: scale(1.1);
+}
+
+.pet-select .head-img{
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+}
+
+.pet-select .head-img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
+}
+
+.pet-select .category-box {
+  width: 12%;
+  height: 7%;
+  left: 44%;
+  top: 14%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.pet-select .category-box .category-item{
+  width: 18%;
+  height: 57%;
+  margin-left: 5%;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.12);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-select .category-box .category-item:hover{
+  background-color: rgb(var(--cor-principal),0.15);
+  border: 1px solid rgb(var(--cor-principal),0.45);
+}
+
+.pet-select .features-box{
+  width: 25%;
+  height: 7%;
+  left: 4%;
+  top: 14%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.pet-select .features-box .features-item{
+  width: 65%;
+  height: 50%;
+  margin-left: 2%;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(var(--cor-preto), 0.80);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-select .features-box .features-item .text{
+  color: #FFF;
+  font-size: 1vh;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+
+.pet-select .features-box .features-item img{
+  width: 1.5vh;
+  height: 1.5vh;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+}
+
+
+.pet-select .pet-name{
+  width: 20%;
+  height: 7%;
+  left: 4.5%;
+  top: 20%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 3.5vh;
+  flex-direction: row;
+}
+
+.pet-select .buy-button {
+  height: 5%;
+  position: absolute;
+  left: 4.5%;
+  top: 90%;
+  border-radius: 0.4vh;
+  display: inline-flex; /* Faz o botão ajustar ao conteúdo */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(var(--cor-preto), 0.80);
+  padding: 0 30px; /* Pequeno padding fixo ao redor do texto */
+  white-space: nowrap; /* Impede que o texto quebre em múltiplas linhas */
+}
+
+.pet-select .buy-button:hover{
+  background: rgba(var(--cor-preto), 1);
+  cursor: pointer;
+  /* color: black; */
+}
+
+.pet-select .buy-button img{
+  width: 1.5vh;
+  height: 1.5vh;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+
+.pet-select .pet-price{
+  left: 4.5%;
+  top: 85%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 2.5vh;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.pet-select .pet-desc{
+  width: 20%;
+  height: 7%;
+  left: 4.5%;
+  top: 25%;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-direction: row;
+}
+
+.pet-select .stats-img{
+  width: 1.5%;
+  height: 2%;
+  left: 4.5%;
+  top: 45%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.pet-select .stats-text{
+  position: absolute;
+  left: 6.5%;
+  top: 44.7%;
+  color: #FFF;
+  font-size: 2vh;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pet-select .stats-box{
+  width: 20%;
+  height: 40%;
+  left: 4.5%;
+  top: 49%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.5vh;
+  flex-direction: column;
+  overflow: inherit !important;
+}
+
+.pet-select .stats-box .stats-item{
+  width: 95%;
+  height: 12%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(var(--cor-preto), 0.80);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  overflow: inherit !important;
+}
+
+.pet-select .stats-box .stats-item img{
+  width: 1.5vh;
+  height: 1.5vh;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+}
+
+.pet-select .stats-box .stats-item .text{
+  color: #FFF;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  position: absolute;
+  left: 105%;
+  top: 35%;
+}
+
+.pet-select .stats-box .stats-item .stats-alt-box{
+  width: 80%;
+  height: 20%;
+  border-radius: 0.3rem;
+  position: absolute;
+  left: 12%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.5s;
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.pet-select .stats-box .stats-item .stats-alt-box .stats-alt-color{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  background: rgb(var(--cor-principal));
+  transition-duration: 0.5s;
+}
+
+.pets-box {
+  width: 20%;
+  height: 15%;
+  top: 85%;
+  left: 42%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.pets-box .pet-item {
+  background: rgba(217, 217, 217, 0.4);
+  width: 22%;
+  height: 60%;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 2;
+  margin-left: 2.48%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.pets-box .pet-item .status-border{
+  width: 27%;
+  height: 25%;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  border-radius: 50vh;
+}
+
+.pets-box .pet-item:hover{
+  background: white;
+  border: 1px solid white;
+}
+
+.pets-box .pet-item img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pet-interact .interact-box{
+  width: 13%;
+  height: 50%;
+  border-radius: 1vh;
+  overflow: initial;
+  z-index: 2;
+  flex-shrink: 0;
+  position: absolute;
+  top: 46%;
+  left: 83%;
+  border: 0.1vh solid; 
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.1)) 1;
+  background: rgba(31, 31, 31, 0.8);
+}
+
+.pet-interact .interact-box .with{
+  width: 100%;
+  height: 10%;
+  left: 6%;
+  top: 3%;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.70);
+  text-transform: uppercase;
+  font-size: 1vh;
+}
+
+.pet-interact .interact-box .name{
+  width: 100%;
+  height: 10%;
+  left: 6%;
+  top: 6.5%;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+}
+
+.pet-interact .interact-box .stroke{
+  stroke-dasharray: 50 1000;
+  stroke-dashoffset: 0;
+  animation: dash 5s linear forwards;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: -7%;
+  left: 5%;
+}
+
+.pet-interact .interact-box .radial-box{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 95%;
+  height: 9%;
+  top: 12%;
+  left: -2%;
+  position: absolute;
+}
+
+.pet-interact .interact-box .radial{
+  width: 19%;
+  margin-left: 1.5vh;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+}
+
+.pet-interact .interact-box .radial .alt-radial{
+  width: 88%;
+  height: 76%;
+  left: 5%;
+  top: -1%;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.3vh solid rgba(255, 255, 255,0.15);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-interact .interact-box .radial img{
+  position: absolute;
+  left: 38%;
+  top: 27%;
+  width: 1.3vh;
+  height: 1.5vh;
+}
+
+.pet-interact .interact-box .interact-list{
+  width: 100%;
+  height: 75%;
+  top: 20%;
+  position: absolute;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  overflow: hidden scroll;
+}
+
+.pet-interact .interact-box .interact-item{
+  width: 85%;
+  left: 7%;
+  height: 12.3%;
+  margin-top: 3%;
+  position: relative;
+  border-radius: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5vh;
+  border: 0.1vh solid; 
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0.3)) 1;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.pet-interact .interact-box .interact-item:hover{
+  border: 0.1vh solid rgba(var(--cor-principal), 0.75);
+  background-color: rgba(var(--cor-principal), 0.20);
+  /* background: rgba(255, 255, 255, 0.15);
+  border: 0.1vh solid; 
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.1)) 1; */
+
+}
+
+.pet-interact .interact-box .interact-item img{
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 1.2vh;
+  width: 1.2vh;
+  height: 1.2vh;
+  position: absolute;
+  left: 5%;
+  border: 0.1vh solid; 
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.1)) 1;
+}
+
+.pet-interact .interact-box .interact-item .text{
+  color: rgb(255, 255, 255);
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+}
+
+.pet-interact .interact-img{
+  width: 25%;
+  height: 13%;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1vh solid rgba(255, 255, 255, 0.15); 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.308) 0%, rgba(0, 0, 0, 0.1) 100%);
+  top: -16%;
+  left: 76%;
+}
+
+.pet-interact .interact-img .yellow{
+  background-color: rgb(var(--cor-principal));
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border-radius: 50%;
+  top: 70%;
+  left: 70%;
+  z-index: 2;
+  padding: 0.8vh;
+  display: flex;
+  font-size: 1vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.pet-interact .interact-img img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.dog-interact-box{
+  display: none;
+  width: 10%;
+  height: 9%;
+  position: absolute;
+  left: 48%;
+  top: 18%;
+}
+
+.dog-interact-box .dog-img{
+  width: 30%;
+  height: 61%;
+  top: 5%;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1vh solid rgba(255, 255, 255, 0.15); 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.308) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.dog-interact-box  .header{
+  width: 100%;
+  height: 10%;
+  left: 35%;
+  top: 12%;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1vh;
+}
+
+.dog-interact-box .alt{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  border-radius: 50%;
+  top: 23%;
+  left: 31%;
+  z-index: 2;
+  padding: 0.8vh;
+  display: flex;
+  font-size: 1.5vh;
+  text-align: left;
+  align-items: leftter;
+  justify-content: left;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255,0.5);
+}
+
+.dog-interact-box .dog-img img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.dog-interact-box svg {
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 77%;
+  left: 27%;
+}
+
+
+.buy-shop .bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.buy-shop .head{
+  position: absolute;
+  left: 35%;
+}
+
+.shop-box {
+  width: 60%;
+  height: 60%;
+  top: 25%;
+  left: 22%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.shop-box .item {
+  background: rgba(217, 217, 217, 0.4);
+  width: 30.5%;
+  height: 99%;
+  position: relative;
+  border-radius: 0.5vh;
+  border: 0.2vh solid rgba(14, 14, 14);
+  z-index: 2;
+  margin-left: 2.48%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.shop-box .item .bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.shop-box .item:hover{
+  background: white;
+  border: 0.2vh solid rgba(14, 14, 14);
+}
+
+.shop-box .item .color, .shop-box .item .color-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease; 
+  z-index: 1;
+}
+
+.shop-box .item .color {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.40) 0%, #0A0A0A 100%);
+}
+
+.shop-box .item .color-hover {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.10) 0%, #0A0A0A 100%);
+  opacity: 0; 
+}
+
+.shop-box .item:hover .color-hover {
+  opacity: 1; 
+}
+
+.shop-box .item:hover .color {
+  opacity: 0; 
+}
+
+.shop-box .stars-box{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 64%;
+  left: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.shop-box .stars-box .star{
+  width: 4%;
+  height: 20%;
+  z-index: 2;
+  margin-left: 1%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  opacity: 1;
+}
+
+.shop-box .type{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 67%;
+  left: 5%;
+  display: flex;
+  color: #FFF;
+  font-size: 1.1vh;
+  flex-direction: row;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.shop-box .name{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 69%;
+  left: 5%;
+  display: flex;
+  color: #FFF;
+  font-size: 2.5vh;
+  flex-direction: row;
+  z-index: 2;
+  text-transform: uppercase;
+  color: rgb(var(--cor-principal));
+}
+
+.shop-box .description {
+  width: 90%;
+  height: 20%;
+  text-align: left;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1vh;
+  font-weight: bold;
+  z-index: 2;
+  overflow: hidden;
+  display: block; 
+  word-wrap: break-word;
+}
+
+.shop-box .coord1{
+  width: 20%;
+  height: 3%;
+  padding: 0.5vh;
+  border-radius: 0.2vh;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.9vh;
+  flex-direction: row;
+  z-index: 2;
+  background: #fff;
+}
+
+.shop-box .price{
+  color: #FFF;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1vh;
+  position: absolute;
+  top: 93%;
+  left: 5%;
+  z-index: 2;
+}
+
+.shop-box .purchase{
+  color: black;
+  text-transform: uppercase;
+  font-size: 1vh;
+  border-radius: 0.2vh;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1vh;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 91%;
+  left: 66%;
+  width: 25%;
+  height: 5%;
+  padding: 0.54vh 1vh;
+  z-index: 2;
+  background: #fff;
+  transition-duration: 0.5s;
+}
+
+.shop-box .purchase:hover{
+  background: rgb(var(--cor-principal));
+  color: black;
+}
+
+.shop-box  .map{
+  width: 7%;
+  height: 4%;
+  border-radius: 0.2vh;
+  position: absolute;
+  left: 88%;
+  top: 80%;
+  z-index: 3;
+  background: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.shop-box  .map:hover{
+  background: rgb(var(--cor-principal));
+}
+
+.shop-box .map img{
+  width: 1.1vh;
+  height: 1.1vh;
+  position: absolute;
+  left: 27%;
+  top: 30%;
+}
+
+.shop-box .ayaks{
+  position: absolute;
+  z-index: 2;
+  opacity: 0.2;
+  top: 79%;
+}
+
+
+.boss-menu .bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.boss-menu .menu-box{
+  border-radius: 1vh;
+  background: #0A0A0A;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+.boss-menu .menu-box .boss-head{
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  width: 21%;
+  height: 16%;
+}
+
+.menu-box .personel-panel{
+  width: 21%;
+  height: 8%;
+  left: 1%;
+  top:20%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 1.7vh;
+  transition-duration: 0.5s;
+}
+
+.menu-box .personel-panel:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .personel-panel img{
+  position: absolute;
+  left: 0%;
+  width: 6vh;
+  height: 7vh;
+}
+
+.menu-box .shop-money{
+  width: 21%;
+  height: 20%;
+  left: 1%;
+  top: 30%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.menu-box .shop-money .header{
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  color: #FFF;
+  font-size: 1.5vh;
+}
+
+.menu-box .shop-money .desc{
+  position: absolute;
+  top: 30%;
+  width: 85%;
+  font-weight: lighter;
+  left: 6%;
+  color: #676767;
+  text-transform: none;
+  text-align: start;
+  font-size: 1.1vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-box .shop-money .total-header {
+  position: absolute;
+  top: 65%;
+  left: 6%;
+  color: #676767;
+  font-size: 1.1vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-box .shop-money .total-price {
+  position: absolute;
+  top: 76%;
+  left: 6%;
+  color: #fff;
+  font-size: 1.3vh;
+}
+
+.menu-box .withdraw-button {
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  left: 77%;
+  top: 60%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .withdraw-button:hover {
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.menu-box .activity-box {
+  width: 21%;
+  height: 45.5%;
+  left: 1%;
+  top: 52%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 1.7vh;
+}
+
+.menu-box .activity-box .header{
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  color: #FFF;
+  font-size: 1.5vh;
+}
+
+.menu-box .activity-box .desc{
+  position: absolute;
+  top: 12%;
+  width: 85%;
+  font-weight: lighter;
+  left: 6%;
+  color: #676767;
+  text-transform: none;
+  text-align: start;
+  font-size: 1vh;
+  text-transform: uppercase;
+}
+
+.menu-box .activity-box .sell-box{
+  width: 88%;
+  height: 80%;
+  position: absolute;
+  top: 16%;
+  left: 6%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vw;
+  overflow: hidden scroll;
+}
+
+.menu-box .activity-box .sell-box .sell-item{
+  width: 100%;
+  height: 18%;
+  position: relative;
+  border-radius: 0.3rem;
+  background: #141414;
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.menu-box .activity-box .sell-box .sell-item .name{
+  color: #fff;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  text-transform: none;
+}
+
+.menu-box .activity-box .sell-box .sell-item .alt{
+  color: #676767;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  text-transform: none;
+}
+
+.menu-box .activity-box .sell-box .sell-item img{
+  width: 3.5vh;
+  height: 3.5vh;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  border-radius: 50%;
+}
+
+.menu-box .activity-box .sell-box .sell-item:nth-child(odd) {
+  background: #141414;
+}
+
+.menu-box .activity-box .sell-box .sell-item:nth-child(even) {
+  background: #0E0E0E;
+}
+
+.menu-box .level-box{
+  width: 75.5%;
+  height: 10%;
+  left: 23%;
+  top: 2%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.menu-box .level-box .fa-gear{
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  left: -5.5%;
+  top: 9%;
+  font-size: 2.5vh;
+  transition-duration: 0.5s;
+}
+
+.menu-box .level-box .fa-gear:hover{
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .level-box svg{
+  stroke-dasharray: 10 2000;
+  stroke-dashoffset: 0;
+  animation: dash 5s linear forwards;
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  left: 2%;
+}
+
+
+.menu-box .level-box img{
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  left: 2%;
+}
+
+.menu-box .level-box .level{
+  color: rgb(var(--cor-principal));
+  text-shadow: 0px 1px 5px rgba(var(--cor-principal), 0.35);
+  position: absolute;
+  left: 3.15%;
+  font-size: 1.5vh;
+}
+
+.menu-box .level-box .name{
+  position: absolute;
+  text-transform: none;
+  left: 7%;
+  font-size: 1.4vh;
+}
+
+.menu-box .level-box .progress{
+  width: 50%;
+  height: 6%;
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  border-radius: 0.5vh;
+  background: #141414;
+}
+
+.menu-box .level-box .progress .bar{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5vh;
+  background: rgb(var(--cor-principal));
+}
+
+.menu-box .level-box .current-xp{
+  position: absolute;
+  top: 40%;
+  left: 38.5%;
+  color: #fff;
+  font-size: 1.1vh;
+}
+
+.menu-box .level-box .required-xp{
+  position: absolute;
+  top: 39%;
+  left: 94%;
+  color: #fff;
+  font-size: 1.1vh;
+}
+
+.menu-box .mypets-box{
+  width: 80%;
+  height: 85.5%;
+  position: absolute;
+  top: 12.5%;
+  left: 21.5%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+}
+
+.bg-color{
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left:0%;
+  display: none;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+.menu-box .mypets-list .edit-box{
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  top: 6%;
+  left:24%;
+  z-index: 5;
+  display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: #111;
+}
+
+.menu-box .mypets-list .edit-box .dogimg{
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 3%;
+  z-index: 5;
+}
+
+.menu-box .mypets-list .edit-box .filterdogimg{
+  width: 35%;
+  height: 35%;
+  position: absolute;
+  top: -2%;
+  z-index: 4;
+  filter: blur(0.8vh);
+}
+
+.menu-box .mypets-list .edit-box .img{
+  width: 4%;
+  height: 3%;
+  position: absolute;
+  top: 30%;
+  left: 5.5%;
+  z-index: 5;
+}
+
+.menu-box .mypets-list .edit-box .change-text{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 11%;
+  top: 30%;
+  text-transform: uppercase;
+}
+
+.menu-box .mypets-list .edit-box .name-box{
+  width: 90%;
+  height: 10%;
+  position: absolute;
+  top: 35%;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: #141414;
+}
+
+.menu-box .mypets-list .edit-box .sex{
+  width: 5%;
+  height: 40%;
+  position: absolute;
+  top: 23%;
+  left: 80%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  padding: 0.5vh;
+  background-color: none;
+  transition-duration: 0.5s;
+}
+
+.menu-box .mypets-list .edit-box .text{
+  color: #676767;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  text-transform: uppercase;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.menu-box .mypets-list .edit-box .name-input{
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  width: 20%;
+  height: 1.5vw;
+  border-radius: 0.5vw;
+  border: none;
+  background: none;
+  text-align: start;
+  flex-shrink: 0;
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.7vw;
+  outline: none;
+  line-height: normal;
+}
+
+.menu-box .mypets-list .edit-box .save{
+  top: 84%;
+  background-color: rgb(var(--cor-principal));
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 90%;
+  height: 12%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  transition-duration: 0.5s;
+  color: #fff;
+}
+
+.menu-box .mypets-list .edit-box .save:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .mypets-box .mypets-list{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+  left: 1%;
+}
+
+.menu-box .mypets-box .mypets-list .mypet-item{
+  width: 22.2%;
+  height: 47.4%;
+  position: relative;
+  border-radius: 0.3rem;
+  background: rgb(14, 14, 14);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .mypets-box .mypets-list .mypet-item .locked-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: rgb(16, 16, 16,0.9);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-box .mypets-box .mypets-list .mypet-item .locked-bg img{
+  width: 30%;
+  position: absolute;
+  top: 32%;
+}
+
+.menu-box .mypets-box .mypets-list .mypet-item .locked-bg .text{
+  color: rgb(var(--cor-principal));
+  font-size: 1.4vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+}
+
+.menu-box .mypets-box .mypets-list .dog-blur{
+  width: 55%;
+  height: 40%;
+  position: absolute;
+  top:-1%;
+  filter: blur(0.8vh);
+  z-index: 2;
+}
+.menu-box .mypets-box .mypets-list .dog-img{
+  width: 35%;
+  height: 30%;
+  position: absolute;
+  top:10%;
+  z-index: 3;
+}
+
+.menu-box .mypets-box .mypets-list .bg-blur{
+  width: 100%;
+  height: 38.5%;
+  position: absolute;
+  top:0%;
+  filter: blur(1vh);
+  background: #111;
+}
+
+.menu-box .mypets-box .mypets-list .edit{
+  position: absolute;
+  top: 4%;
+  left: 88%;
+  z-index: 3;
+  transition-duration: 0.5s;
+  width: 5%;
+  height: 4.5%;
+}
+
+.menu-box .mypets-box .mypets-list .edit:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.menu-box .mypets-box .mypets-list .name{
+  color: rgb(var(--cor-principal));
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  text-transform: uppercase;
+}
+
+.menu-box .mypets-box .mypets-list .name-alt{
+  color: white;
+  font-size: 1.7vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  text-transform: uppercase;
+}
+
+.menu-box .mypets-box .mypets-list .levels-box{
+  width: 20%;
+  height: 5%;
+  position: absolute;
+  top: 60%;
+  color: white;
+  padding: 0.5vh;
+  text-transform: uppercase;
+  left: 5%;
+  font-size: 1vh;
+  display: flex;
+  text-align: center;
+  background: #131313;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box .mypets-box .mypets-list .sex-box{
+  width: 24%;
+  height: 5%;
+  position: absolute;
+  top: 60%;
+  color: white;
+  padding: 0.5vh;
+  text-transform: uppercase;
+  left: 33%;
+  font-size: 1vh;
+  display: flex;
+  background: #131313;
+  text-align: end;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu-box .mypets-box .mypets-list .sex-box img{
+  width: 1.5vh;
+  height: 1.5vh;
+  position: absolute;
+  left: 15%;
+}
+
+.menu-box .mypets-box .mypets-list .hr{
+  width: 88%;
+  height: 0.1vh;
+  position: absolute;
+  top: 75%;
+  left: 6%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menu-box .mypets-box .mypets-list .price-header{
+  position: absolute;
+  top: 84%;
+  left: 6%;
+  color: #676767;
+  font-size: 1.2vh;
+  text-transform: uppercase;
+}
+
+.menu-box .mypets-box .mypets-list .prices{
+  position: absolute;
+  top: 90%;
+  left: 6%;
+  color: #fff;
+  font-size: 1.5vh;
+}
+
+.menu-box .mypets-box .mypets-list svg{
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .mypets-box .mypets-list svg:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+.menu-box .mypets-box .mypets-list i{
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transition-duration: 0.5s;
+  background: #b4b4b4;
+  font-size: 2vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5vh;
+  height: 12%;
+  width: 15%;
+}
+
+.menu-box .mypets-box .mypets-list i:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+
+
+.menu-box .personel-box{
+  width: 80%;
+  height: 85.5%;
+  position: absolute;
+  top: 12.5%;
+  left: 21.5%;
+  display: none;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  z-index: 2;
+}
+
+
+
+.menu-box .personel-box .members-header{
+  width: 47%;
+  height: 9%;
+  position: absolute;
+  top: 1%;
+  left: 1.7%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background: linear-gradient(360deg, rgba(var(--cor-principal), 0.00) 20%, rgba(var(--cor-principal), 0.30) 168.57%), #0E0E0E;
+  font-size: 1.5vh;
+  text-transform: uppercase;
+}
+
+.menu-box .personel-box .hired-header{
+  width: 47%;
+  height: 9%;
+  position: absolute;
+  top: 1%;
+  left: 49.4%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background: linear-gradient(360deg, rgba(var(--cor-principal), 0.00) 20%, rgba(var(--cor-principal), 0.30) 168.57%), #0E0E0E;
+  font-size: 1.5vh;
+  text-transform: uppercase;
+}
+
+.menu-box .personel-box .hired-header .text{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  text-transform: uppercase;
+}
+
+.menu-box .personel-box .hired-header img{
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  left: 1%;
+  top: 20%;
+}
+
+.menu-box .personel-box .members-header .text{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  text-transform: uppercase;
+}
+
+.menu-box .personel-box .members-header img{
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  left: 1%;
+  top: 20%;
+}
+
+.menu-box .personel-box .members-box{
+  width: 47%;
+  height: 88%;
+  position: absolute;
+  top: 12%;
+  left: 1.7%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .personel-box .members-box .member-item{
+  width: 100%;
+  height: 10%;
+  position: relative;
+  border-radius: 0.3rem;
+  background: #0E0E0E;
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box .personel-box .members-box .member-item .name{
+  color: white;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .members-box .member-item .position{
+  color: #676767;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .members-box .member-item .auth{
+  color: #676767;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .members-box .member-item .auth-status{
+  color: white;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .members-box .member-item .user-img{
+  width: 3.5vh;
+  height: 3.5vh;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  border-radius: 50%;
+}
+
+.menu-box .personel-box .members-box .member-item .arti{
+  width: 7%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 90%;
+  z-index: 3;
+  transition-duration: 0.5s;
+}
+
+.menu-box .personel-box .members-box .member-item .arti:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.menu-box .personel-box .members-box .member-item:nth-child(odd) {
+  background: #141414;
+}
+
+.menu-box .personel-box .members-box .member-item:nth-child(even) {
+  background: #0E0E0E;
+}
+
+
+
+.menu-box .personel-box .hired-box{
+  width: 47%;
+  height: 88%;
+  position: absolute;
+  top: 12%;
+  left: 49.5%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .personel-box .hired-box .hired-item{
+  width: 100%;
+  height: 10%;
+  position: relative;
+  border-radius: 0.3rem;
+  background: #0E0E0E;
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box .personel-box .hired-box .hired-item .name{
+  color: white;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .hired-box .hired-item .position{
+  color: #676767;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .hired-box .hired-item .auth{
+  color: #676767;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .hired-box .hired-item .auth-status{
+  color: white;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  text-transform: none;
+}
+
+.menu-box .personel-box .hired-box .hired-item .user-img{
+  width: 3.5vh;
+  height: 3.5vh;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  border-radius: 50%;
+}
+
+.menu-box .personel-box .hired-box .hired-item .arti{
+  width: 3%;
+  height: 30%;
+  position: absolute;
+  top: 17%;
+  left: 90%;
+  z-index: 3;
+  border-radius: 15%;
+  border: 0.1vh solid rgb(var(--cor-principal));
+  padding: 1vh;
+  transition-duration: 0.5s;
+}
+
+.menu-box .personel-box .hired-box .hired-item .arti:hover{
+  filter: brightness(1.2);
+  background: rgb(var(--cor-principal));
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.menu-box .personel-box .hired-box .hired-item:nth-child(odd) {
+  background: #141414;
+}
+
+.menu-box .personel-box .hired-box .hired-item:nth-child(even) {
+  background: #0E0E0E;
+}
+
+
+
+
+.mypets .features-box{
+  width: 25%;
+  height: 7%;
+  left: 4%;
+  top: 60%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.mypets .features-box .features-item{
+  width: 65%;
+  height: 50%;
+  margin-left: 2%;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(31, 31, 31, 0.8);
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypets .features-box .features-item .text{
+  color: #FFF;
+  font-size: 1vh;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+
+.mypets .features-box .features-item img{
+  width: 1.5vh;
+  height: 1.5vh;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+}
+
+.mypets .pet-name{
+  width: 20%;
+  height: 7%;
+  left: 4.5%;
+  top: 56%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 3.5vh;
+  flex-direction: row;
+}
+
+.mypets .current-dog{
+  width: 4%;
+  height: 7%;
+  left: 4.5%;
+  top: 48%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.5vh;
+  flex-direction: row;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.mypets .sell-button{
+  width: 8%;
+  height: 5%;
+  left: 4.5%;
+  top: 70%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.3vh;
+  flex-direction: row;
+  border-radius: 0.5vh;
+  background: rgba(31, 31, 31, 0.80);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mypets .sell-button:hover{
+  background: rgba(31, 31, 31, 1);
+  color: rgb(255, 255, 255);
+}
+
+.mypets .head-img{
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+}
+
+.mypets .owned-text{
+  position: absolute;
+  z-index: 2;
+  left: 4.5%;
+  top: 82%;
+  color: #FFF;
+  font-size: 1.5vh;
+  text-transform: uppercase;
+}
+
+
+.mypets .owned-box {
+  width: 91%;
+  height: 13%;
+  top: 85%;
+  left: 3.5%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition-duration: 0.5s;
+}
+
+.mypets .owned-box .owned-item {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(31, 31, 31, 0.8);
+  border-radius: 0.5vh;
+  width: 18.3%;
+  height: 80%;
+  position: relative;
+  z-index: 2;
+  margin-left: 1%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  transition-duration: 0.5s;
+}
+
+.mypets .owned-box .owned-item .pet-img{
+  width: 20%;
+  height: 55%;
+  left: 5%;
+  top: 23%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.5vh;
+  flex-direction: row;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.mypets .owned-box .owned-item .pet-name{
+  width: 100%;
+  height: 10%;
+  left: 30%;
+  top: 27%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.5vh;
+  flex-direction: row;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.mypets .owned-box .owned-item .pet-features{
+  width: 100%;
+  height: 10%;
+  left: 30%;
+  top: 45%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.2vh;
+  flex-direction: row;
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.mypets .owned-box .owned-item .sex{
+  width: 5%;
+  height: 15%;
+  left: 85%;
+  top: 38%;
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  font-size: 1.2vh;
+  flex-direction: row;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.mypets .owned-box .owned-item:hover{
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(31, 31, 31, 1.0);
+  border-radius: 0vh;
+}
+
+
+.buy-shop .notification{
+  left: 23.5%;
+  top: 20%;
+  padding: 1vh 10vh;
+  position: absolute;
+  display: none;
+  color: #FFF;
+  font-size: 1.3vh;
+  flex-direction: row;
+  border-radius: 0.5vh;
+  color: #fff;
+  border: 0.1vh solid rgba(var(--cor-principal), 1);
+  z-index: 5;
+  background: rgba(var(--cor-principal), 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.shop-menu .notification{
+  top: 11.5%;
+  left: 28%;
+  padding: 1vh 10vh;
+  position: absolute;
+  display: none;
+  color: #FFF;
+  font-size: 1.3vh;
+  flex-direction: row;
+  border-radius: 0.5vh;
+  color: #fff;
+  border: 0.1vh solid rgba(var(--cor-principal), 1);
+  z-index: 5;
+  background: rgba(var(--cor-principal), 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boss-menu .notification{
+  left: 28.5%;
+  top: 12%;
+  padding: 1vh 10vh;
+  position: absolute;
+  display: none;
+  color: #FFF;
+  font-size: 1.3vh;
+  flex-direction: row;
+  border-radius: 0.5vh;
+  color: #fff;
+  border: 0.1vh solid rgba(var(--cor-principal), 1);
+  z-index: 5;
+  background: rgba(var(--cor-principal), 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pet-select .notification{
+  left: 4.5%;
+  top: 11%;
+  padding: 1vh 10vh;
+  position: absolute;
+  display: none;
+  color: #FFF;
+  font-size: 1.3vh;
+  flex-direction: row;
+  border-radius: 0.5vh;
+  color: #fff;
+  border: 0.1vh solid rgba(var(--cor-principal), 1);
+  z-index: 5;
+  background: rgba(var(--cor-principal), 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.error{
+  background: rgba(255, 0, 0, 0.8) !important;
+  color: #fff !important;
+  border: 0.1vh solid rgba(255, 0, 0, 1)!important;
+}
+
+.success{
+  background: rgba(43, 214, 160, 0.8)!important;
+  color: #fff !important;
+  border: 0.1vh solid rgba(2, 120, 83, 1)!important;
+}
+
+/* Yükleme animasyonu için CSS */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid rgba(var(--cor-principal), 1);
+  animation: spin 1s linear infinite;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: 31%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Resim kapsayıcısı */
+.pet-item {
+  position: relative;
+}
+
+.pet-item img {
+  display: none; /* Önce resmi gizle */
+}
+
+
+
+
+.shop-menu .bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.shop-menu .menu-box{
+  border-radius: 1vh;
+  background: #0A0A0A;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+
+.shop-menu .menu-box .boss-head{
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  width: 21%;
+  height: 16%;
+}
+
+.menu-box .shop-panel{
+  width: 21%;
+  height: 8%;
+  left: 1%;
+  top:20%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 1.7vh;
+  transition-duration: 0.5s;
+}
+
+.menu-box .shop-panel .text{
+  color: white;
+  font-size: 1.7vh;
+  font-weight: bold;
+  position: absolute;
+  left: 20%;
+  top: 32%;
+  text-transform: uppercase;
+}
+
+.menu-box .shop-panel:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .shop-panel:hover svg{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .shop-panel:hover svg path{
+  fill: rgb(var(--cor-principal));
+}
+
+.menu-box .shop-panel svg{
+  position: absolute;
+  left: 7%;
+  width: 2.5vh;
+  height: 3.5vh;
+}
+
+
+.menu-box .item-list{
+  width: 76%;
+  height: 95%;
+  position: absolute;
+  top: 2%;
+  left: 23%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .item-list .item{
+  width: 22.8%;
+  height: 30%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 0.1vh solid #121212;
+  background: #0D0D0D;  
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .item-list .item img:nth-child(1){
+  width: 35%;
+  height: 32%;
+  position: absolute;
+  top: 25%;
+  filter: grayscale(100%);
+  filter: blur(0.99vh);
+  opacity: 0.5;
+}
+
+.menu-box .item-list .item img:nth-child(2){
+  width: 30%;
+  height: 25%;
+  position: absolute;
+  top: 29%;
+}
+
+.menu-box .item-list .item .price{
+  color: rgb(var(--cor-principal));
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  text-transform: uppercase;
+}
+
+.menu-box .item-list .item .alt{
+  color: #393939;
+  font-size: 1.2vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 80%;
+  text-transform: uppercase;
+}
+
+.menu-box .item-list .item .name{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 6%;
+  top: 88%;
+  text-transform: uppercase;
+  width: 69%;
+  overflow: hidden;
+  height: -45%;
+  max-height: 9%;
+}
+
+.menu-box .item-list .item svg{
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .item-list .item svg:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+
+.menu-box .basket-list{
+  width: 21.5%;
+  height: 39%;
+  position: absolute;
+  /* background-color: red; */
+  top: 60%;
+  left: 1%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .basket-list .basket-item{
+  width: 100%;
+  height: 15%;
+  position: relative;
+  border-radius: 0.3rem;
+  border: 0.1vh solid #121212;
+  background: #0D0D0D;  
+  z-index: 2;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  transition-duration: 0.5s;
+}
+
+.menu-box .basket-list .basket-item img{
+  width: 15%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.menu-box .basket-list .basket-item .price{
+  color: rgb(var(--cor-principal));
+  font-size: 1.2vh;
+  font-weight: bold;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  text-transform: uppercase;
+}
+
+.menu-box .basket-list .basket-item .name{
+  color: white;
+  font-size: 1.3vh;
+  font-weight: bold;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  text-transform: capitalize;
+}
+
+.menu-box .basket-list .basket-item .arti{
+  width: 10%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 85%;
+  z-index: 3;
+  transition-duration: 0.5s;
+  border-radius: 15%;
+  background: rgb(var(--cor-principal));
+}
+
+.menu-box .basket-list .basket-item .arti:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.menu-box .basket-list .basket-item .eksi{
+  width: 10%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 67%;
+  z-index: 3;
+  transition-duration: 0.5s;
+  border-radius: 15%;
+  background: #424241;
+}
+
+.menu-box .total-price-text{
+  width: 21.5%;
+  height: 5%;
+  position: absolute;
+  top: 92.5%;
+  z-index: 5;
+  font-size: 1vh;
+  color: rgb(138, 133, 133);
+  left: 1%;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .total-payment-text{
+  width: 21.5%;
+  height: 5%;
+  position: absolute;
+  top: 90%;
+  z-index: 5;
+  font-size: 1.3vh;
+  color: rgb(var(--cor-principal));
+  text-shadow: 0 0 0.35rem rgb(var(--cor-principal));
+  left: 1%;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+}
+
+.menu-box .total-payment{
+  width: 21.5%;
+  height: 5%;
+  position: absolute;
+  top: 90%;
+  z-index: 5;
+  font-size: 1.3vh;
+  color: rgb(var(--cor-principal));
+  text-shadow: 0 0 0.35rem rgb(var(--cor-principal));
+  left: 0.5%;
+  border-radius: 0.5vh;
+  overflow: hidden scroll;
+  display: flex;
+  align-items: right;
+  align-content: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.menu-box .basket-list .basket-item .eksi:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem #2b2b2a);
+  cursor: pointer;
+}
+
+.menu-box .basket-list .basket-item .count{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  text-transform: uppercase;
+}
+
+.menu-box .pay-button{
+  width: 10.1%;
+  height: 3%;
+  left: 1%;
+  top: 95%;
+  position: absolute;
+  border-radius: 0.5vh;
+  border: 0.1vh solid rgb(44, 44, 44,0.2);
+  background: #0E0E0E;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(138, 133, 133);
+  display: flex;
+  font-size: 1vh;
+  z-index: 5;
+  transition-duration: 0.5s;
+}
+
+.menu-box .pay-button:hover{
+  color: rgb(var(--cor-principal));
+  cursor: pointer;
+  background: #0E0E0E;
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+}
+
+
+
+.boss-menu .edit-box{
+  width: 25%;
+  height: 55%;
+  position: absolute;
+  top: 25%;
+  left:43%;
+  z-index: 5;
+  display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: #111;
+}
+
+.boss-menu .edit-box .dogimg{
+  width: 50%;
+  height: 22%;
+  position: absolute;
+  top: 5%;
+  z-index: 3;
+}
+
+.boss-menu .edit-box .filterdogimg{
+  width: 50%;
+  height: 27%;
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+  filter: blur(0.8vh);
+}
+
+.boss-menu .edit-box .img{
+  width: 4%;
+  height: 3%;
+  position: absolute;
+  top: 25%;
+  left: 5.5%;
+  z-index: 5;
+}
+
+.boss-menu .edit-box .change-text{
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 11%;
+  z-index: 5;
+  top: 25%;
+  text-transform: uppercase;
+}
+
+.boss-menu .edit-box .name-box{
+  width: 90%;
+  height: 10%;
+  position: absolute;
+  top: 30%;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  background-color: #141414;
+}
+
+.boss-menu .edit-box .fa-ad{
+  position: absolute;
+  font-size: 5vh;
+  color: white;
+  left: 20%;
+  z-index: 55555;
+  top: 20%;
+}
+.boss-menu .edit-box .edit-img{
+  width: 5%;
+  height: 40%;
+  position: absolute;
+  top: 23%;
+  left: 81%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  padding: 0.5vh;
+  background-color: none;
+  transition-duration: 0.5s;
+}
+
+.boss-menu .edit-box .edit-img:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+
+}
+
+.boss-menu .edit-box .text{
+  color: #676767;
+  font-size: 1.5vh;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  text-transform: uppercase;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.boss-menu .edit-box .name-input{
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  width: 20%;
+  height: 1.5vw;
+  border-radius: 0.5vw;
+  border: none;
+  background: none;
+  text-align: start;
+  flex-shrink: 0;
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.7vw;
+  outline: none;
+  line-height: normal;
+}
+
+.boss-menu .edit-box svg{
+  position: absolute;
+  top: 30%;
+  left: 77%;
+  width: 15%;
+  height: 40%;
+  border-radius: 0.5vw;
+  border: none;
+  background: none;
+  text-align: start;
+  flex-shrink: 0;
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.7vw;
+  outline: none;
+  line-height: normal;
+  transition-duration: 0.5s;
+}
+
+.boss-menu .edit-box svg:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.boss-menu .edit-box .save{
+  top: 90%;
+  background-color: rgb(var(--cor-principal));
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 90%;
+  height: 8%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0.5vh;
+  transition-duration: 0.5s;
+}
+
+.boss-menu .edit-box .save:hover{
+  filter: brightness(1.2);
+  filter: drop-shadow(0 0 0.35rem rgb(var(--cor-principal)));
+  cursor: pointer;
+}
+
+.dui{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.dui img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

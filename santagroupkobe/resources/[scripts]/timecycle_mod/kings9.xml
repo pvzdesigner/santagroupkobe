@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<timecycle_modifier_data version="1.000000">
+    <modifier name="kings9" numMods="25" userFlags="0">
+        <light_directional_amb_intensity_mult>3.750 0.000</light_directional_amb_intensity_mult>
+        <light_amb_down_wrap>-2.400 0.000</light_amb_down_wrap>
+        <light_natural_amb_up_col_r>1.600 0.000</light_natural_amb_up_col_r>
+        <light_natural_amb_up_col_g>1.906 0.000</light_natural_amb_up_col_g>
+        <light_natural_amb_up_col_b>1.331 0.000</light_natural_amb_up_col_b>
+        <postfx_intensity_bloom>-0.054 0.000</postfx_intensity_bloom>
+        <postfx_correct_col_r>0.722 0.000</postfx_correct_col_r>
+        <postfx_correct_col_g>0.955 -0.884</postfx_correct_col_g>
+        <postfx_correct_col_b>2.458 0.000</postfx_correct_col_b>
+        <postfx_shift_cutoff>0.100 0.000</postfx_shift_cutoff>
+        <postfx_desaturation>1.260 0.000</postfx_desaturation>
+        <postfx_vignetting_radius>7.500 0.000</postfx_vignetting_radius>
+        <postfx_vignetting_col_r>0.063 0.000</postfx_vignetting_col_r>
+        <postfx_vignetting_col_g>0.126 0.000</postfx_vignetting_col_g>
+        <postfx_vignetting_col_b>0.266 0.000</postfx_vignetting_col_b>
+        <postfx_grad_top_col_r>0.344 0.000</postfx_grad_top_col_r>
+        <postfx_grad_top_col_g>0.350 0.000</postfx_grad_top_col_g>
+        <postfx_grad_top_col_b>0.567 0.000</postfx_grad_top_col_b>
+        <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+        <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+        <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+        <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+        <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+        <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+        <postfx_grad_midpoint>0.485 0.000</postfx_grad_midpoint>
+    </modifier>
+</timecycle_modifier_data>

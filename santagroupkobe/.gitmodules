@@ -1,0 +1,15 @@
+[submodule "resources/[assets]/clothes"]
+	path = resources/[assets]/clothes
+	url = https://github.com/UndergroundGit/clothes.git
+
+[submodule "resources/[assets]/maps"]
+	path = resources/[assets]/maps
+	url = https://github.com/UndergroundGit/maps.git
+
+[submodule "resources/[assets]/vehs"]
+	path = resources/[assets]/vehs
+	url = https://github.com/UndergroundGit/vehs.git
+
+[submodule "resources/[assets]/weapons"]
+	path = resources/[assets]/weapons
+	url = https://github.com/UndergroundGit/weapons.git

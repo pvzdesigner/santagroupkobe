@@ -1,0 +1,3 @@
+-- likizao_ac stub library
+-- Este arquivo é um stub para compatibilidade.
+-- O recurso original (likizao_ac) não está presente neste servidor.

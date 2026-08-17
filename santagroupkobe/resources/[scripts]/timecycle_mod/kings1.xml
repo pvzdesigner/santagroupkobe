@@ -1,0 +1,19 @@
+   <?xml version="1.0"?>
+<timecycle_modifier_data version="1.000000">
+    <modifier name="kings1" numMods="14" userFlags="0">
+        <light_directional_amb_col_r>0.440 -1.000</light_directional_amb_col_r>
+        <light_directional_amb_col_g>1.000 0.480</light_directional_amb_col_g>
+        <light_directional_amb_col_b>0.369 0.500</light_directional_amb_col_b>
+        <light_amb_down_wrap>-0.950 0.200</light_amb_down_wrap>
+        <light_natural_amb_up_col_r>0.000 0.000</light_natural_amb_up_col_r>
+        <light_natural_amb_up_col_g>0.169 0.000</light_natural_amb_up_col_g>
+        <sky_cloud_gen_frequency>1.200 0.000</sky_cloud_gen_frequency>
+        <sky_cloud_overall_color>0.350 0.000</sky_cloud_overall_color>
+        <sky_cloud_hdr>1.120 0.000</sky_cloud_hdr>
+        <fog_hdr>-1.150 0.703</fog_hdr>
+        <reflection_lod_range_start>-0.100 0.020</reflection_lod_range_start>
+        <reflection_lod_range_end>2.500 -27.500</reflection_lod_range_end>
+        <reflection_slod_range_start>0.000 7.500</reflection_slod_range_start>
+        <reflection_slod_range_end>0.000 0.000</reflection_slod_range_end>
+    </modifier>
+</timecycle_modifier_data>

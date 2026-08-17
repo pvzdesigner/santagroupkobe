@@ -1,0 +1,30 @@
+DeathTimerVips = { -- tempo de morte
+  ["Black"] = 10,
+  ["Platinum"] = 15,
+  ["Ouro"] = 30,
+  ["VipPolicia"] = 20,
+  ["VipPVP"] = 20,
+  ["VipInicial"] = 60,
+  ["VipKids"] = 60,
+  ["Prata"] = 60,
+  ["Bronze"] = 90,
+  ["VipLancamento"] = 30,
+  ["VipLancamento2"] = 30,
+  ["VipLancamento3"] = 30,
+}
+
+DeathTimerGroups = {
+  ["Black"] = DeathTimerVips.Black,
+  ["Platinum"] = DeathTimerVips.Platinum,
+  ["Ouro"] = DeathTimerVips.Ouro,
+  ["VipPolicia"] = DeathTimerVips.VipPolicia,
+  ["VipKids"] = DeathTimerVips.VipKids,
+  ["VipPVP"] = DeathTimerVips.VipPVP,
+  ["VipInicial"] = DeathTimerVips.VipInicial,
+  ["Prata"] = DeathTimerVips.Prata,
+  ["Bronze"] = DeathTimerVips.Bronze,
+  ["VipLancamento"] = 30,
+  ["VipLancamento2"] = 30,
+  ["VipLancamento3"] = 30,
+  ["Admin"] = 10,
+}

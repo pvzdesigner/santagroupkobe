@@ -1,0 +1,8 @@
+# FOLDERS #
+/artifacts
+/cache
+/config
+
+# FILES #
+.replxx_history
+imgui.ini

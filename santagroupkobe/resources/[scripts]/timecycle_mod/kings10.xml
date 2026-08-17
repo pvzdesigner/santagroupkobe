@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<timecycle_modifier_data version="1.000000">
+    <modifier name="kings10" numMods="12" userFlags="0">
+        <light_ray_col_r>-0.300 1.000</light_ray_col_r>
+        <light_ray_col_g>0.050 1.000</light_ray_col_g>
+        <light_ray_underwater_mult>0.500 0.100</light_ray_underwater_mult>
+        <postfx_bright_pass_thresh_width>0.300 0.000</postfx_bright_pass_thresh_width>
+        <postfx_bright_pass_thresh>1.000 0.000</postfx_bright_pass_thresh>
+        <postfx_intensity_bloom>0.272 0.000</postfx_intensity_bloom>
+        <postfx_correct_col_r>0.676 0.000</postfx_correct_col_r>
+        <postfx_correct_col_b>2.436 0.000</postfx_correct_col_b>
+        <postfx_desaturation>1.330 0.000</postfx_desaturation>
+        <fog_start>13.000 13.000</fog_start>
+        <fog_hdr>32.000 0.020</fog_hdr>
+        <reflection_hdr_mult>1.450 0.000</reflection_hdr_mult>
+    </modifier>
+</timecycle_modifier_data>

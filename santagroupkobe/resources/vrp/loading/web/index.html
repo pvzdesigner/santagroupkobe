@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>loadscreen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="style.css" as="style">
+    <!-- Replace jQuery with a smaller version and load async -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" 
+        crossorigin="anonymous" defer></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div id="loading-fallback">
+        <div class="loader">
+            <div class="loader-container">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
+                </svg>
+                <div class="percentage">0%</div>
+            </div>
+            <p class="loading-text">Carregando</p>
+        </div>
+    </div>
+    
+    <img src="https://santaimagens.roleplayrp.com/img/season7_loading_new/fare.png" alt="" id="fare">
+
+    <div class="age-classification">
+      <div class="classification-title">CLASSIFICAÇÃO INDICATIVA -</div>
+      <div class="classification-box">
+          <div class="age-number">18</div>
+          <div class="classification-text">
+              <p>Violência</p>
+              <p>Drogas</p>
+              <p>Conteúdo Sexual</p>
+          </div>
+      </div>
+      <div class="classification-footer">
+          Não recomendado para<br>menores de 18 ANOS
+      </div>
+    </div>
+
+    <div class="video-background" style="background: #000;">
+        <div class="video-foreground" id="YouTubeBackgroundVideoPlayer"></div>
+    </div>
+    
+    <div class="player">
+        <span id="arm"></span>
+        <ul>
+            <li class="info">
+                <img id="image" class="banner" src="" alt="">
+                <h2 id="song">loading</h2>
+                <div class="button-items">
+                    <audio id="music" preload="auto">
+                    </audio>
+                    <div class="flex">
+                        <div id="slider">
+                            <div id="elapsed"></div>
+                            <div id="buffered"></div>
+                        </div>
+                        <p id="timer">0:00</p>
+
+                    </div>
+                    <div class="controls">
+                        <span class="expend">
+                            <svg id="previous" class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
+                                <g>
+                                    <polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7" />
+                                </g>
+                            </svg>
+                        </span>
+                        <svg id="play" viewBox="0 0 25 25" xml:space="preserve">
+                            <defs>
+                                <rect x="-49.5" y="-132.9" width="446.4" height="366.4" />
+                            </defs>
+                            <g>
+                                <circle fill="none" cx="12.5" cy="12.5" r="10.8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z" />
+                            </g>
+                        </svg>
+                        <svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
+                            <g>
+                                <rect x="6" y="4.6" width="3.8" height="15.7" />
+                                <rect x="14" y="4.6" width="3.9" height="15.7" />
+                            </g>
+                        </svg>
+                        <span class="expend">
+                            <svg id="next" class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
+                                <g>
+                                    <polygon
+                                        points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7" />
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                    <div class="slider">
+                        <div class="volume"></div>
+                        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.1" />
+                        <img src="https://santaimagens.roleplayrp.com/img/season7_loading_new/volume.svg" alt="">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Combined and inlined critical cityConfigs data -->
+    <script>
+    var cityConfigs = {
+        "Universo": "l6yNBw9KbAY",
+        "Santa": "hHkW2OovuQs",
+        "Alexandria": "HFNXWBnNRUY",
+        "Kingdom": "xiukPO28Wrw",
+        "Maresia": "_b61OaSly2c",
+        "CidadeNobre": "G7AnX0r3ozk",
+        "Caravelas": "xRt5M0k4g14"
+    };
+    </script>
+    
+    <!-- Defer non-critical scripts -->
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <script src="./scripts/video.js" defer></script>
+</body>
+
+</html>
